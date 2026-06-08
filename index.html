@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faiz Ahmed Bhagett | IT Infrastructure Consultant</title>
+<style>
+/* CSS Styling for a Modern Corporate Look */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+/* Navbar */
+header {
+  background: #0f172a;
+  color: #fff;
+  padding: 20px 10%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Modern IT Brand Logo Flex Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* Professional IT Infrastructure & Network Shield Symbol */
+.logo-symbol {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* Inner Graphic Elements representing Cloud & Security nodes */
+.logo-symbol::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  transform: rotate(45deg);
+}
+.logo-symbol::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #38bdf8;
+  border-radius: 50%;
+}
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+.logo-text span {
+  color: #38bdf8;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #38bdf8;
+}
+/* Hero Section with Picture Side-by-Side */
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #fff;
+  padding: 160px 10% 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  text-align: left;
+}
+.hero-image {
+  flex: 0 0 240px;
+  text-align: center;
+}
+.hero-image img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+}
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+.cta-btn {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
+  display: inline-block;
+}
+.cta-btn:hover {
+  background: #0ea5e9;
+}
+/* Containers for Sections */
+.section {
+  padding: 80px 10%;
+}
+.section h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0f172a;
+  position: relative;
+}
+.section h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background: #38bdf8;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.service-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border-top: 4px solid #38bdf8;
+  transition: transform 0.3s;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+}
+.service-card h3 {
+  margin-bottom: 15px;
+  color: #0f172a;
+}
+/* About Section Text Styling */
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.8;
+}
+/* Contact Section layout */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+.contact-info, .contact-form-wrapper {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.contact-info h3 {
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+.contact-info p {
+  margin-bottom: 15px;
+}
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+input, textarea, select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 16px;
+}
+form button {
+  background: #0f172a;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+form button:hover {
+  background: #1e293b;
+}
+/* Footer */
+footer {
+  background: #0f172a;
+  color: #94a3b8;
+  text-align: center;
+  padding: 40px 10%;
+  margin-top: 40px;
+}
+footer a {
+  color: #38bdf8;
+  text-decoration: none;
+  margin: 0 10px;
+}
+/* Small screen fix for hero and logo alignment */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 5%;
+  }
+  nav a {
+    margin: 0 10px;
+  }
+  .hero {
+    text-align: center;
+    padding-top: 220px;
+  }
+  .hero p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Header Navigation -->
+<header>
+  <div class="logo-container">
+    <div class="logo-symbol"></div>
+    <div class="logo-text">FAIZ AHMED <span>BHAGETT</span></div>
+  </div>
+  <nav>
+    <a href="#home" id="nav-home">Home</a>
+    <a href="#services" id="nav-services">Services</a>
+    <a href="#about" id="nav-about">About</a>
+    <a href="#contact" id="nav-contact">Contact</a>
+    <a href="#" onclick="setLanguage('en'); return false;">EN</a>
+    <a href="#" onclick="setLanguage('de'); return false;">DE</a>
+  </nav>
+</header>
+
+<!-- Hero Section (Front Page) -->
+<section id="home" class="hero">
+  <div class="hero-image">
+    <img src="faiz.jpg" alt="Faiz Ahmed Bhagett">
+  </div>
+  <div class="hero-content">
+    <h1 id="hero-h1">Secure & Modern IT Infrastructure Services</h1>
+    <p id="hero-p">
+      Over 20 years of international corporate experience delivering resilient Cloud migrations,
+      enterprise networking, and hard-hitting cybersecurity adjustments.
+    </p>
+    <a href="#contact" class="cta-btn" id="hero-btn">Book Free Consultation</a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section">
+  <h2 id="services-title">Expertise & Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3 id="srv1-h">Cloud Transitions & M365</h3>
+      <p id="srv1-p">Strategic migration strategies for Microsoft 365 tenants, Azure AD integration, and robust identity lifecycle optimization.</p>
+    </div>
+    <div class="service-card">
+      <h3 id="srv2-h">Endpoint Management</h3>
+      <p id="srv2-p">Automated deployment frameworks and policy architecture utilizing Microsoft Intune and SCCM/MECM technologies.</p>
+    </div>
+    <div class="service-card">
+      <h3 id="srv3-h">Infrastructure Hardening</h3>
+      <p id="srv3-p">End-to-end security deployment including MFA policies, Conditional Access rules, BitLocker mechanisms, and secure remote entry via ZScaler.</p>
+    </div>
+    <div class="service-card">
+      <h3 id="srv4-h">Enterprise Networking</h3>
+      <p id="srv4-p">Designing secure, modern Multi-VLAN switches and RADIUS system infrastructures using Cisco and Aruba technology frameworks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section" style="background-color: #f1f5f9;">
+  <h2 id="about-title">About Me</h2>
+  <div class="about-text">
+    
+      I am <strong>Faiz Ahmed Bhagett</strong>, a Senior IT Infrastructure Consultant with a global track record
+      across Germany, Sweden, Belgium, and the USA. Having designed infrastructure systems for high-stakes
+      environments like Deutsche Bank and Johnson & Johnson, I build architectures focusing strictly on elite
+      stability, zero-trust security layouts, and long-term operating durability.
+    </p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+  <h2 id="contact-title">Connect With Me</h2>
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h3 id="cinfo-title">Contact Information</h3>
+      <p><strong>Faiz Ahmed Bhagett IT Consulting</strong></p>
+      <p>Kirchstraße 42,<br>65376 Oestrich-Winkel,<br>Deutschland</p>
+      <p><strong id="cinfo-phone">Phone:</strong> 0171 6780015 / +49 171 6780015</p>
+      <p><strong>Email:</strong> Bhagett@yahoo.de</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form-wrapper">
+      <form action="https://formspree.io" method="POST">
+        <label for="name" id="lbl-name">Your Name / Company</label>
+        <input type="text" id="name" name="name" required placeholder="John Doe">
+
+        <label for="email" id="lbl-email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="john@company.com">
+
+        <label for="service" id="lbl-service">Required Solution</label>
+        <select id="service" name="service">
+          <option value="Cloud Migration & M365" id="opt1">Cloud Migration & M365</option>
+          <option value="IT Security Hardening" id="opt2">IT Security Hardening</option>
+          <option value="Network Optimization" id="opt3">Network Optimization</option>
+          <option value="General Inquiry" id="opt4">General Inquiry</option>
+        </select>
+
+        <label for="msg" id="lbl-msg">Message</label>
+        <textarea id="msg" name="message" rows="4" required placeholder="Describe your project..."></textarea>
+
+        <button type="submit" id="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+<script>
+function setLanguage(lang) {
+  const texts = {
+
+    en: {
+      navHome: "Home",
+      navServices: "Services",
+      navAbout: "About",
+      navContact: "Contact",
+
+      heroH1: "Secure & Modern IT Infrastructure Services",
+      heroP: "Over 20 years of international corporate experience delivering Cloud migrations and enterprise networking.",
+      heroBtn: "Book Free Consultation",
+
+      servicesTitle: "Expertise & Services",
+
+      srv1h: "Cloud Transitions & M365",
+      srv1p: "Strategic migration for Microsoft 365 and Azure AD integration.",
+
+      srv2h: "Endpoint Management",
+      srv2p: "Automated deployment using Intune and SCCM.",
+
+      srv3h: "Infrastructure Hardening",
+      srv3p: "Security setup including MFA, BitLocker and Conditional Access.",
+
+      srv4h: "Enterprise Networking",
+      srv4p: "Secure VLAN and Cisco/Aruba network design.",
+
+      aboutTitle: "About Me",
+      aboutP: "I am Faiz Ahmed Bhagett, Senior IT Infrastructure Consultant with global experience.",
+
+      contactTitle: "Connect With Me",
+      submitBtn: "Send Message"
+    },
+
+    de: {
+      navHome: "Startseite",
+      navServices: "Leistungen",
+      navAbout: "Über mich",
+      navContact: "Kontakt",
+
+      heroH1: "Sichere & moderne IT-Infrastruktur-Services",
+      heroP: "Über 20 Jahre internationale Erfahrung in Cloud-Migrationen und Netzwerken.",
+      heroBtn: "Kostenlose Beratung buchen",
+
+      servicesTitle: "Leistungen & Expertise",
+
+      srv1h: "Cloud-Migration & M365",
+      srv1p: "Strategische Migration von Microsoft 365 und Azure AD Integration.",
+
+      srv2h: "Endpoint-Management",
+      srv2p: "Automatisierte Bereitstellung mit Intune und SCCM.",
+
+      srv3h: "Infrastruktur-Härtung",
+      srv3p: "Sicherheitslösungen wie MFA, BitLocker und Conditional Access.",
+
+      srv4h: "Unternehmensnetzwerke",
+      srv4p: "Sichere VLAN- und Cisco/Aruba-Netzwerkarchitektur.",
+
+      aboutTitle: "Über mich",
+      aboutP: "Ich bin Faiz Ahmed Bhagett, Senior IT Infrastructure Consultant mit internationaler Erfahrung.",
+
+      contactTitle: "Kontakt aufnehmen",
+      submitBtn: "Nachricht senden"
+    }
+  };
+
+  const t = texts[lang];
+  document.getElementById("nav-home").innerText = t.navHome;
+  document.getElementById("nav-services").innerText = t.navServices;
+  document.getElementById("nav-about").innerText = t.navAbout;
+  document.getElementById("nav-contact").innerText = t.navContact;
+
+  document.getElementById("hero-h1").innerText = t.heroH1;
+  document.getElementById("hero-p").innerText = t.heroP;
+  document.getElementById("hero-btn").innerText = t.heroBtn;
+
+  document.getElementById("services-title").innerText = t.servicesTitle;
+
+  document.getElementById("srv1-h").innerText = t.srv1h;
+  document.getElementById("srv1-p").innerText = t.srv1p;
+
+  document.getElementById("srv2-h").innerText = t.srv2h;
+  document.getElementById("srv2-p").innerText = t.srv2p;
+
+  document.getElementById("srv3-h").innerText = t.srv3h;
+  document.getElementById("srv3-p").innerText = t.srv3p;
+
+  document.getElementById("srv4-h").innerText = t.srv4h;
+  document.getElementById("srv4-p").innerText = t.srv4p;
+
+  document.getElementById("about-title").innerText = t.aboutTitle;
+  document.getElementById("about-p").innerText = t.aboutP;
+
+document.getElementById("about-p").innerHTML = t.aboutP;
+  document.getElementById("btn-submit").innerText = t.submitBtn;
+}
+</script>
+
+  <p id="footer-copy">&copy; 2026 Faiz Ahmed Bhagett. All Rights Reserved.</p>
+  <p style="margin-top: 10px; font-size: 14px;">
+    <a href="#contact" id="foot-link1">Impressum (Legal Notice)</a> |
+</footer>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a26920652a4351c2dc5cf4a/1jqjakqo8';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+</body>
+</html>
