@@ -177,6 +177,34 @@ nav a:hover {
  margin-bottom: 15px;
  color: #0f172a;
 }
+/* Direct Chat Floating Button */
+.direct-chat-widget {
+ position: fixed;
+ bottom: 30px;
+ right: 30px;
+ background: #25d366; /* Elegant WhatsApp Green */
+ color: white;
+ padding: 15px 25px;
+ border-radius: 50px;
+ font-weight: bold;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+ z-index: 9999;
+ transition: transform 0.3s, background 0.3s;
+ animation: pulse 2s infinite;
+}
+.direct-chat-widget:hover {
+ background: #128c7e;
+ transform: scale(1.05);
+}
+@keyframes pulse {
+ 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+ 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+ 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
 /* About Section Text Styling */
 .about-text {
  max-width: 800px;
@@ -295,8 +323,7 @@ footer a {
  <div class="hero-content">
  <h1 id="hero-h1">Secure & Modern IT Infrastructure Services</h1>
  <p id="hero-p">
- Over 20 years of international corporate experience delivering resilient 
-Cloud migrations,
+ Over 20 years of international corporate experience delivering resilient Cloud migrations,
  enterprise networking, and hard-hitting cybersecurity adjustments.
  </p>
  <a href="#contact" class="cta-btn" id="hero-btn">Book Free Consultation</a>
@@ -337,14 +364,10 @@ Cloud migrations,
  <h2 id="about-title">About Me</h2>
  <div class="about-text">
  <p id="about-p">
- I am <strong>Faiz Ahmed Bhagett</strong>, a Senior IT Infrastructure 
-Consultant with a global track record
- across Germany, Sweden, Belgium, and the USA. Having designed 
-infrastructure systems for high-stakes
- environments like Deutsche Bank and Johnson & Johnson, I build 
-architectures focusing strictly on elite
- stability, zero-trust security layouts, and long-term operating 
-durability.
+ I am <strong>Faiz Ahmed Bhagett</strong>, a Senior IT Infrastructure Consultant with a global track record
+ across Germany, Sweden, Belgium, and the USA. Having designed infrastructure systems for high-stakes
+ environments like Deutsche Bank and Johnson & Johnson, I build architectures focusing strictly on elite
+ stability, zero-trust security layouts, and long-term operating durability.
  </p>
  </div>
 </section>
@@ -357,8 +380,7 @@ durability.
  <h3 id="cinfo-title">Contact Information</h3>
  <p><strong>Faiz Ahmed Bhagett IT Consulting</strong></p>
  <p>Kirchstraße 42,<br>65376 Oestrich-Winkel,<br>Deutschland</p>
- <p><strong id="cinfo-phone">Phone:</strong> 0171 6780015 / +49 171 
-6780015</p>
+ <p><strong id="cinfo-phone">Phone:</strong> 0171 6780015 / +49 171 6780015</p>
  <p><strong>Email:</strong> Bhagett@yahoo.de</p>
  </div>
  <!-- Contact Form -->
@@ -408,6 +430,7 @@ function setLanguage(lang) {
  srv5p: "Fast-response 1st, 2nd, and 3rd level corporate helpdesk architectures optimized for immediate issue resolution. We provide reliable on-site troubleshooting for local office operations alongside highly scalable remote administration suites, ensuring maximum operational uptime and continuous data protection baseline audits.",
  srv6h: "Citrix Administration VDI and VM-Ware",
  srv6p: "Advanced virtualization architecture design utilizing Citrix Virtual DaaS and VMware Horizon systems. We specialize in engineering secure, centralized digital workspaces that segment access and prevent data exfiltration, combined with elite datacenter virtualization performance optimization for hypervisors.",
+ chatBtn: "Chat Direct with Faiz",
  aboutTitle: "About Me",
  aboutP: "I am <strong>Faiz Ahmed Bhagett</strong>, a Senior IT Infrastructure Consultant with a global track record across Germany, Sweden, Belgium, and the USA. Having designed infrastructure systems for high-stakes environments like Deutsche Bank and Johnson & Johnson, I build architectures focusing strictly on elite stability, zero-trust security layouts, and long-term operating durability.",
  contactTitle: "Connect With Me",
@@ -461,6 +484,7 @@ function setLanguage(lang) {
  document.getElementById("srv5-p").innerText = t.srv5p;
  document.getElementById("srv6-h").innerText = t.srv6h;
  document.getElementById("srv6-p").innerText = t.srv6p;
+ document.getElementById("chat-link-text").innerText = t.chatBtn;
  document.getElementById("about-title").innerText = t.aboutTitle;
  document.getElementById("about-p").innerHTML = t.aboutP;
  document.getElementById("btn-submit").innerText = t.submitBtn;
@@ -471,19 +495,11 @@ function setLanguage(lang) {
  <a href="#contact" id="foot-link1">Impressum (Legal Notice)</a>
  </p>
 </footer>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://tawk.to';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+
+<!-- Modern Direct Chat Floating Action Widget -->
+<a href="https://wa.me." target="_blank" class="direct-chat-widget">
+ <span id="chat-link-text">Chat Direct with Faiz</span>
+</a>
+
 </body>
 </html>
-
