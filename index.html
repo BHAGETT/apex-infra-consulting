@@ -48,6 +48,7 @@ header {
  align-items: center;
  justify-content: center;
  border: 1px solid rgba(255, 255, 255, 0.1);
+ position: relative;
 }
 /* Inner Graphic Elements representing Cloud & Security nodes */
 .logo-symbol::before {
@@ -81,6 +82,7 @@ nav a {
  margin-left: 20px;
  font-weight: 500;
  transition: color 0.3s;
+ cursor: pointer;
 }
 nav a:hover {
  color: #38bdf8;
@@ -177,17 +179,17 @@ nav a:hover {
  margin-bottom: 15px;
  color: #0f172a;
 }
-/* Direct Chat Floating Button */
+/* Direct Chat Floating Button styling */
 .direct-chat-widget {
  position: fixed;
  bottom: 30px;
  right: 30px;
  background: #25d366; /* Elegant WhatsApp Green */
- color: white;
+ color: white !important;
  padding: 15px 25px;
  border-radius: 50px;
  font-weight: bold;
- text-decoration: none;
+ text-decoration: none !important;
  display: flex;
  align-items: center;
  gap: 10px;
@@ -265,36 +267,23 @@ form button {
 form button:hover {
  background: #1e293b;
 }
-/* Footer */
-footer {
- background: #0f172a;
- color: #94a3b8;
- text-align: center;
- padding: 40px 10%;
- margin-top: 40px;
-}
-footer a {
- color: #38bdf8;
- text-decoration: none;
- margin: 0 10px;
-}
 /* Small screen fix for hero and logo alignment */
 @media (max-width: 768px) {
  header {
- flex-direction: column;
- gap: 15px;
- padding: 15px 5%;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px 5%;
  }
  nav a {
- margin: 0 10px;
+  margin: 0 10px;
  }
  .hero {
- text-align: center;
- padding-top: 220px;
+  text-align: center;
+  padding-top: 220px;
  }
  .hero p {
- margin-left: auto;
- margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
  }
 }
 </style>
@@ -303,203 +292,200 @@ footer a {
 <!-- Header Navigation -->
 <header>
  <div class="logo-container">
- <div class="logo-symbol"></div>
- <div class="logo-text">FAIZ AHMED <span>BHAGETT</span></div>
+  <div class="logo-symbol"></div>
+  <div class="logo-text">FAIZ AHMED <span>BHAGETT</span></div>
  </div>
  <nav>
- <a href="#home" id="nav-home">Home</a>
- <a href="#services" id="nav-services">Services</a>
- <a href="#about" id="nav-about">About</a>
- <a href="#contact" id="nav-contact">Contact</a>
- <a href="#" onclick="setLanguage('en'); return false;">EN</a>
- <a href="#" onclick="setLanguage('de'); return false;">DE</a>
+  <a href="#home" id="nav-home">Home</a>
+  <a href="#services" id="nav-services">Services</a>
+  <a href="#about" id="nav-about">About</a>
+  <a href="#contact" id="nav-contact">Contact</a>
+  <a onclick="setLanguage('en')">EN</a>
+  <a onclick="setLanguage('de')">DE</a>
  </nav>
 </header>
 <!-- Hero Section (Front Page) -->
 <section id="home" class="hero">
  <div class="hero-image">
- <img src="faiz.jpg" alt="Faiz Ahmed Bhagett">
+  <img src="faiz.jpg" alt="Faiz Ahmed Bhagett">
  </div>
  <div class="hero-content">
- <h1 id="hero-h1">Secure & Modern IT Infrastructure Services</h1>
- <p id="hero-p">
- Over 20 years of international corporate experience delivering resilient Cloud migrations,
- enterprise networking, and hard-hitting cybersecurity adjustments.
- </p>
- <a href="#contact" class="cta-btn" id="hero-btn">Book Free Consultation</a>
+  <h1 id="hero-h1">Secure & Modern IT Infrastructure Services</h1>
+  <p id="hero-p">Over 20 years of international corporate experience delivering resilient Cloud migrations, enterprise networking, and hard-hitting cybersecurity adjustments.</p>
+  <a href="#contact" class="cta-btn" id="hero-btn">Book Free Consultation</a>
  </div>
 </section>
+
 <!-- Services Section -->
 <section id="services" class="section">
  <h2 id="services-title">Expertise & Services</h2>
  <div class="services-grid">
- <div class="service-card">
- <h3 id="srv1-h">Cloud Transitions & M365</h3>
- <p id="srv1-p">Strategic migration paths tailored for complex Microsoft 365 tenants and hybrid setups. Implement robust Azure AD (Entra ID) integrations to guarantee secure, single-sign-on (SSO) environments across your enterprise. Build automated user lifecycle frameworks to minimize administrative overhead while maximizing cloud ROI and data compliance.</p>
- </div>
- <div class="service-card">
- <h3 id="srv2-h">Endpoint Management</h3>
- <p id="srv2-p">Streamline device provisioning using advanced modern frameworks like Microsoft Autopilot and automated imaging. We engineer and enforce zero-trust compliance, configuration, and app protection policies across your entire fleet. Seamlessly manage, patch, and monitor corporate endpoints using tailored Microsoft Intune and SCCM/MECM hybrid technologies.</p>
- </div>
- <div class="service-card">
- <h3 id="srv3-h">Infrastructure Hardening</h3>
- <p id="srv3-p">Thoroughly evaluate and fortify your entire digital footprint against modern, sophisticated cyber threats. Implement strict Multi-Factor Authentication (MFA) policies, Conditional Access rules, and full-disk BitLocker mechanisms. Design resilient, encrypted virtual desktop infrastructures (VDI) and secure remote access gateways like ZScaler.</p>
- </div>
- <div class="service-card">
- <h3 id="srv4-h">Enterprise Networking</h3>
- <p id="srv4-p">Design and deploy highly secure, modern Multi-VLAN switches and robust RADIUS system infrastructures. Implement strict AAA frameworks to ensure only authorized users and compliant devices gain entry. Leverage proven, enterprise-grade hardware and software frameworks utilizing Cisco and Aruba technology ecosystems.</p>
- </div>
- <div class="service-card">
- <h3 id="srv5-h">IT-Support Onsite and Remote</h3>
- <p id="srv5-p">Fast-response 1st, 2nd, and 3rd level corporate helpdesk architectures optimized for immediate issue resolution. We provide reliable on-site troubleshooting for local office operations alongside highly scalable remote administration suites, ensuring maximum operational uptime and continuous data protection baseline audits.</p>
- </div>
- <div class="service-card">
- <h3 id="srv6-h">Citrix Administration VDI and VM-Ware</h3>
- <p id="srv6-p">Advanced virtualization architecture design utilizing Citrix Virtual DaaS and VMware Horizon systems. We specialize in engineering secure, centralized digital workspaces that segment access and prevent data exfiltration, combined with elite datacenter virtualization performance optimization for hypervisors.</p>
- </div>
+  <div class="service-card">
+   <h3 id="srv1-h">Cloud Transitions & M365</h3>
+   <p id="srv1-p">Strategic migration paths tailored for complex Microsoft 365 tenants and hybrid setups. Implement robust Azure AD (Entra ID) integrations to guarantee secure, single-sign-on (SSO) environments across your enterprise. Build automated user lifecycle frameworks to minimize administrative overhead while maximizing cloud ROI and data compliance.</p>
+  </div>
+  <div class="service-card">
+   <h3 id="srv2-h">Endpoint Management</h3>
+   <p id="srv2-p">Streamline device provisioning using advanced modern frameworks like Microsoft Autopilot and automated imaging. We engineer and enforce zero-trust compliance, configuration, and app protection policies across your entire fleet. Seamlessly manage, patch, and monitor corporate endpoints using tailored Microsoft Intune and SCCM/MECM hybrid technologies.</p>
+  </div>
+  <div class="service-card">
+   <h3 id="srv3-h">Infrastructure Hardening</h3>
+   <p id="srv3-p">Thoroughly evaluate and fortify your entire digital footprint against modern, sophisticated cyber threats. Implement strict Multi-Factor Authentication (MFA) policies, Conditional Access rules, and full-disk BitLocker mechanisms. Design resilient, encrypted virtual desktop infrastructures (VDI) and secure remote access gateways like ZScaler.</p>
+  </div>
+  <div class="service-card">
+   <h3 id="srv4-h">Enterprise Networking</h3>
+   <p id="srv4-p">Design and deploy highly secure, modern Multi-VLAN switches and robust RADIUS system infrastructures. Implement strict AAA frameworks to ensure only authorized users and compliant devices gain entry. Leverage proven, enterprise-grade hardware and software frameworks utilizing Cisco and Aruba technology ecosystems.</p>
+  </div>
+  <div class="service-card">
+   <h3 id="srv5-h">IT-Support Onsite and Remote</h3>
+   <p id="srv5-p">Fast-response 1st, 2nd, and 3rd level corporate helpdesk architectures optimized for immediate issue resolution. We provide reliable on-site troubleshooting for local office operations alongside highly scalable remote administration suites, ensuring maximum operational uptime and continuous data protection baseline audits.</p>
+  </div>
+  <div class="service-card">
+   <h3 id="srv6-h">Citrix Administration VDI and VM-Ware</h3>
+   <p id="srv6-p">Advanced virtualization architecture design utilizing Citrix Virtual DaaS and VMware Horizon systems. We specialize in engineering secure, centralized digital workspaces that segment access and prevent data exfiltration, combined with elite datacenter virtualization performance optimization for hypervisors.</p>
+  </div>
  </div>
 </section>
+
 <!-- About Section -->
-<section id="about" class="section" style="background-color: #f1f5f9;">
+<section id="about" class="section" style="background-color: #fff;">
  <h2 id="about-title">About Me</h2>
  <div class="about-text">
- <p id="about-p">
- I am <strong>Faiz Ahmed Bhagett</strong>, a Senior IT Infrastructure Consultant with a global track record
- across Germany, Sweden, Belgium, and the USA. Having designed infrastructure systems for high-stakes
- environments like Deutsche Bank and Johnson & Johnson, I build architectures focusing strictly on elite
- stability, zero-trust security layouts, and long-term operating durability.
- </p>
+  <p id="about-p">I am <strong>Faiz Ahmed Bhagett</strong>, a Senior IT Infrastructure Consultant with a global track record across Germany, Sweden, Belgium, and the USA. Having designed infrastructure systems for high-stakes environments like Deutsche Bank and Johnson & Johnson, I build architectures focusing strictly on elite stability, zero-trust security layouts, and long-term operating durability.</p>
  </div>
 </section>
+
 <!-- Contact Section -->
 <section id="contact" class="section">
  <h2 id="contact-title">Connect With Me</h2>
  <div class="contact-container">
- <!-- Contact Info -->
- <div class="contact-info">
- <h3 id="cinfo-title">Contact Information</h3>
- <p><strong>Faiz Ahmed Bhagett IT Consulting</strong></p>
- <p>Kirchstraße 42,<br>65376 Oestrich-Winkel,<br>Deutschland</p>
- <p><strong id="cinfo-phone">Phone:</strong> 0171 6780015 / +49 171 6780015</p>
- <p><strong>Email:</strong> Bhagett@yahoo.de</p>
- </div>
- <!-- Contact Form -->
- <div class="contact-form-wrapper">
- <form action="https://formspree.io" method="POST">
- <label for="name" id="lbl-name">Your Name / Company</label>
- <input type="text" id="name" name="name" required placeholder="John Doe">
- <label for="email" id="lbl-email">Email Address</label>
- <input type="email" id="email" name="email" required placeholder="john@company.com">
- <label for="service" id="lbl-service">Required Solution</label>
-  <select id="service" name="service">
- <option value="Cloud Migration & M365" id="opt1">Cloud Migration & M365</option>
- <option value="IT Security Hardening" id="opt2">IT Security Hardening</option>
- <option value="Network Optimization" id="opt3">Network Optimization</option>
- <option value="General Inquiry" id="opt4">General Inquiry</option>
- </select>
- <label for="msg" id="lbl-msg">Message</label>
- <textarea id="msg" name="message" rows="4" required placeholder="Describe your project..."></textarea>
- <button type="submit" id="btn-submit">Send Message</button>
- </form>
- </div>
+  <!-- Contact Info Block -->
+  <div class="contact-info">
+   <h3 id="info-title">Contact Information</h3>
+   <p><strong>Faiz Ahmed Bhagett IT Consulting</strong></p>
+   <p>Kirchstraße 42,<br>65376 Oestrich-Winkel,<br>Deutschland</p>
+   <p><strong>Phone:</strong> 0171 6780015 / +49 171 6780015</p>
+   <p><strong>Email:</strong> Bhagett@yahoo.de</p>
+  </div>
+  <!-- Form Block -->
+  <div class="contact-form-wrapper">
+   <form action="#" method="POST">
+    <label for="name" id="lbl-name">Your Name / Company</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email" id="lbl-email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="solution" id="lbl-solution">Required Solution</label>
+    <select id="solution" name="solution">
+     <option value="cloud" id="opt-cloud">Cloud Migration & M365</option>
+     <option value="security" id="opt-security">IT Security Hardening</option>
+     <option value="network" id="opt-network">Network Optimization</option>
+     <option value="general" id="opt-general">General Inquiry</option>
+    </select>
+    
+    <label for="message" id="lbl-msg">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    
+    <button type="submit" id="btn-submit">Send Message</button>
+   </form>
+  </div>
  </div>
 </section>
-<!-- Footer -->
+
+<!-- Floating Universal WhatsApp Widget Link -->
+<a href="https://wa.me" class="direct-chat-widget" target="_blank" rel="noopener noreferrer" id="whatsapp-link">
+ <!-- Simple Inline SVG Phone Chat Icon -->
+ <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.256 5.254 0 11.715 0c3.13 0 6.073 1.218 8.284 3.43 2.21 2.211 3.425 5.157 3.424 8.289-.003 6.457-5.254 11.713-11.718 11.713-2.003-.001-3.97-.512-5.711-1.488L0 24zm6.59-3.929c1.642.975 3.251 1.486 4.954 1.487 5.4 0 9.794-4.394 9.797-9.793.001-2.614-1.011-5.071-2.853-6.914-1.841-1.842-4.296-2.855-6.916-2.855-5.405 0-9.799 4.394-9.802 9.794-.001 1.795.474 3.488 1.38 5.02L2.16 21.6l4.487-1.179zm11.396-4.664c-.3-.15-1.776-.876-2.051-.976-.275-.1-.475-.15-.675.15-.2.3-.775.976-.95 1.176-.175.2-.35.225-.65.075-.301-.15-1.267-.467-2.414-1.492-.893-.797-1.496-1.782-1.671-2.081-.175-.3-.018-.462.132-.611.135-.134.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525C9.894 8.025 9.3 6.576 9.05 5.975c-.243-.591-.489-.51-.675-.519-.175-.008-.375-.01-.575-.01-.2 0-.525.075-.8 1.05-.275.975-1.05 3.074-1.05 3.174 0 .1.1.25.225.4.125.15 2.5 3.817 6.055 5.351.846.364 1.506.581 2.02.744.85.27 1.624.232 2.235.141.681-.101 1.776-.726 2.026-1.399.25-.674.25-1.25.175-1.399-.075-.149-.275-.249-.575-.399z"/>
+ </svg>
+ <span id="whatsapp-text">Chat Direct with Faiz</span>
+</a>
+<!-- Footer Section -->
 <footer>
-<script>
-function setLanguage(lang) {
- const texts = {
- en: {
- navHome: "Home",
- navServices: "Services",
- navAbout: "About",
- navContact: "Contact",
- heroH1: "Secure & Modern IT Infrastructure Services",
- heroP: "Over 20 years of international corporate experience delivering Cloud migrations and enterprise networking.",
- heroBtn: "Book Free Consultation",
- servicesTitle: "Expertise & Services",
- srv1h: "Cloud Transitions & M365",
- srv1p: "Strategic migration paths tailored for complex Microsoft 365 tenants and hybrid setups. Implement robust Azure AD (Entra ID) integrations to guarantee secure, single-sign-on (SSO) environments across your enterprise. Build automated user lifecycle frameworks to minimize administrative overhead while maximizing cloud ROI and data compliance.",
- srv2h: "Endpoint Management",
- srv2p: "Streamline device provisioning using advanced modern frameworks like Microsoft Autopilot and automated imaging. We engineer and enforce zero-trust compliance, configuration, and app protection policies across your entire fleet. Seamlessly manage, patch, and monitor corporate endpoints using tailored Microsoft Intune and SCCM/MECM hybrid technologies.",
- srv3h: "Infrastructure Hardening",
- srv3p: "Thoroughly evaluate and fortify your entire digital footprint against modern, sophisticated cyber threats. Implement strict Multi-Factor Authentication (MFA) policies, Conditional Access rules, and full-disk BitLocker mechanisms. Design resilient, encrypted virtual desktop infrastructures (VDI) and secure remote access gateways like ZScaler.",
- srv4h: "Enterprise Networking",
- srv4p: "Design and deploy highly secure, modern Multi-VLAN switches and robust RADIUS system infrastructures. Implement strict AAA frameworks to ensure only authorized users and compliant devices gain entry. Leverage proven, enterprise-grade hardware and software frameworks utilizing Cisco and Aruba technology ecosystems.",
- srv5h: "IT-Support Onsite and Remote",
- srv5p: "Fast-response 1st, 2nd, and 3rd level corporate helpdesk architectures optimized for immediate issue resolution. We provide reliable on-site troubleshooting for local office operations alongside highly scalable remote administration suites, ensuring maximum operational uptime and continuous data protection baseline audits.",
- srv6h: "Citrix Administration VDI and VM-Ware",
- srv6p: "Advanced virtualization architecture design utilizing Citrix Virtual DaaS and VMware Horizon systems. We specialize in engineering secure, centralized digital workspaces that segment access and prevent data exfiltration, combined with elite datacenter virtualization performance optimization for hypervisors.",
- chatBtn: "Chat Direct with Faiz",
- aboutTitle: "About Me",
- aboutP: "I am <strong>Faiz Ahmed Bhagett</strong>, a Senior IT Infrastructure Consultant with a global track record across Germany, Sweden, Belgium, and the USA. Having designed infrastructure systems for high-stakes environments like Deutsche Bank and Johnson & Johnson, I build architectures focusing strictly on elite stability, zero-trust security layouts, and long-term operating durability.",
- contactTitle: "Connect With Me",
- submitBtn: "Send Message"
- },
- de: {
- navHome: "Startseite",
- navServices: "Leistungen",
- navAbout: "Über mich",
- navContact: "Kontakt",
- heroH1: "Sichere & moderne IT-Infrastruktur-Services",
- heroP: "Über 20 Jahre internationale Erfahrung in Cloud-Migrationen und Netzwerken.",
- heroBtn: "Kostenlose Beratung buchen",
- servicesTitle: "Leistungen & Expertise",
- srv1h: "Cloud-Migration & M365",
- srv1p: "Strategische Migrationspfade für komplexe Microsoft 365-Tenants und Hybrid-Infrastrukturen. Implementierung robuster Azure AD (Entra ID) Integrationen für sichere Single-Sign-On (SSO) Umgebungen im gesamten Unternehmen. Aufbau automatisierter User-Lifecycle-Frameworks zur Reduzierung des administrativen Aufwands bei gleichzeitiger Maximierung des Cloud-ROI.",
- srv2h: "Endpoint-Management",
- srv2p: "Optimierung der Gerätebereitstellung durch moderne Frameworks wie Microsoft Autopilot und automatisierte Image-Erstellung. Implementierung von Zero-Trust-Compliance-, Konfigurations- und App-Schutzrichtlinien für Ihre gesamte Flotte. Patch-Management und Überwachung von Endpunkten mittels Microsoft Intune und SCCM/MECM.",
- srv3h: "Infrastruktur-Härtung",
- srv3p: "Umfassende Bewertung und Absicherung Ihrer digitalen Infrastruktur gegen moderne Cyber-Bedrohungen. Implementierung strenger Multi-Faktor-Authentifizierungsrichtlinien (MFA), Conditional Access-Regeln und BitLocker-Verschlüsselung. Design ausfallsicherer, verschlüsselter VDI-Strukturen und sicherer Remote-Gateways wie ZScaler.",
- srv4h: "Unternehmensnetzwerke",
- srv4p: "Planung und Bereitstellung hochsicherer, moderner Multi-VLAN-Switches und RADIUS-Infrastrukturen. Implementierung strenger AAA-Frameworks zur Autorisierung verifizierter Benutzer und Geräte. Einsatz bewährter Enterprise-Hardware auf Basis von Cisco- und Aruba-Technologieumgebungen.",
- srv5h: "IT-Support Vor-Ort & Remote",
- srv5p: "Schnell reagierende 1st-, 2nd- und 3rd-Level Helpdesk-Architekturen für Unternehmen zur direkten Problembehebung. Zuverlässige Fehlerbehebung vor Ort zur Unterstützung lokaler Geschäftsstellen sowie skalierbare Remote-Infrastrukturen zur Maximierung der Betriebszeit.",
- srv6h: "Citrix-Administration VDI & VMware",
- srv6p: "Modernes Design virtueller Architekturen mittels Citrix Virtual DaaS und VMware Horizon. Spezialisierte Bereitstellung zentralisierter digitaler Arbeitsplatzumgebungen mit konsequentem Schutz vor Datenabfluss sowie Performance-Optimierung der zugrundeliegenden Hypervisor-Systeme.",
- aboutTitle: "Über mich",
- aboutP: "Ich bin <strong>Faiz Ahmed Bhagett</strong>, Senior IT Infrastructure Consultant mit internationaler Erfahrung in Deutschland, Schweden, Belgien und den USA. Durch die Entwicklung von Systemen für anspruchsvolle Umgebungen wie die Deutsche Bank und Johnson & Johnson konzipiere ich Architekturen mit klarem Fokus auf Stabilität, Zero-Trust-Sicherheit und langfristige Betriebssicherheit.",
- contactTitle: "Kontakt aufnehmen",
- submitBtn: "Nachricht senden"
- }
- };
- const t = texts[lang];
- document.getElementById("nav-home").innerText = t.navHome;
- document.getElementById("nav-services").innerText = t.navServices;
- document.getElementById("nav-about").innerText = t.navAbout;
- document.getElementById("nav-contact").innerText = t.navContact;
- document.getElementById("hero-h1").innerText = t.heroH1;
- document.getElementById("hero-p").innerText = t.heroP;
- document.getElementById("hero-btn").innerText = t.heroBtn;
- document.getElementById("services-title").innerText = t.servicesTitle;
- document.getElementById("srv1-h").innerText = t.srv1h;
- document.getElementById("srv1-p").innerText = t.srv1p;
- document.getElementById("srv2-h").innerText = t.srv2h;
- document.getElementById("srv2-p").innerText = t.srv2p;
- document.getElementById("srv3-h").innerText = t.srv3h;
- document.getElementById("srv3-p").innerText = t.srv3p;
- document.getElementById("srv4-h").innerText = t.srv4h;
- document.getElementById("srv4-p").innerText = t.srv4p;
- document.getElementById("srv5-h").innerText = t.srv5h;
- document.getElementById("srv5-p").innerText = t.srv5p;
- document.getElementById("srv6-h").innerText = t.srv6h;
- document.getElementById("srv6-p").innerText = t.srv6p;
- document.getElementById("chat-link-text").innerText = t.chatBtn;
- document.getElementById("about-title").innerText = t.aboutTitle;
- document.getElementById("about-p").innerHTML = t.aboutP;
- document.getElementById("btn-submit").innerText = t.submitBtn;
-}
-</script>
- <p id="footer-copy">&copy; 2026 Faiz Ahmed Bhagett. All Rights Reserved.</p>
- <p style="margin-top: 10px; font-size: 14px;">
- <a href="#contact" id="foot-link1">Impressum (Legal Notice)</a>
- </p>
+ <p>&copy; 2026 Faiz Ahmed Bhagett. All Rights Reserved. | <a href="#contact">Impressum (Legal Notice)</a></p>
 </footer>
 
-<!-- Modern Direct Chat Floating Action Widget -->
-<a href="https://wa.me." target="_blank" class="direct-chat-widget">
- <span id="chat-link-text">Chat Direct with Faiz</span>
-</a>
+<!-- Interactive Script Engine -->
+<script>
+const translations = {
+ en: {
+  navHome: "Home", navServices: "Services", navAbout: "About", navContact: "Contact",
+  heroH1: "Secure & Modern IT Infrastructure Services",
+  heroP: "Over 20 years of international corporate experience delivering resilient Cloud migrations, enterprise networking, and hard-hitting cybersecurity adjustments.",
+  heroBtn: "Book Free Consultation", servicesTitle: "Expertise & Services",
+  srv1H: "Cloud Transitions & M365", srv1P: "Strategic migration paths tailored for complex Microsoft 365 tenants and hybrid setups. Implement robust Azure AD (Entra ID) integrations to guarantee secure, single-sign-on (SSO) environments across your enterprise. Build automated user lifecycle frameworks to minimize administrative overhead while maximizing cloud ROI and data compliance.",
+  srv2H: "Endpoint Management", srv2P: "Streamline device provisioning using advanced modern frameworks like Microsoft Autopilot and automated imaging. We engineer and enforce zero-trust compliance, configuration, and app protection policies across your entire fleet. Seamlessly manage, patch, and monitor corporate endpoints using tailored Microsoft Intune and SCCM/MECM hybrid technologies.",
+  srv3H: "Infrastructure Hardening", srv3P: "Thoroughly evaluate and fortify your entire digital footprint against modern, sophisticated cyber threats. Implement strict Multi-Factor Authentication (MFA) policies, Conditional Access rules, and full-disk BitLocker mechanisms. Design resilient, encrypted virtual desktop infrastructures (VDI) and secure remote access gateways like ZScaler.",
+  srv4H: "Enterprise Networking", srv4P: "Design and deploy highly secure, modern Multi-VLAN switches and robust RADIUS system infrastructures. Implement strict AAA frameworks to ensure only authorized users and compliant devices gain entry. Leverage proven, enterprise-grade hardware and software frameworks utilizing Cisco and Aruba technology ecosystems.",
+  srv5H: "IT-Support Onsite and Remote", srv5P: "Fast-response 1st, 2nd, and 3rd level corporate helpdesk architectures optimized for immediate issue resolution. We provide reliable on-site troubleshooting for local office operations alongside highly scalable remote administration suites, ensuring maximum operational uptime and continuous data protection baseline audits.",
+  srv6H: "Citrix Administration VDI and VM-Ware", srv6P: "Advanced virtualization architecture design utilizing Citrix Virtual DaaS and VMware Horizon systems. We specialize in engineering secure, centralized digital workspaces that segment access and prevent data exfiltration, combined with elite datacenter virtualization performance optimization for hypervisors.",
+  aboutTitle: "About Me", 
+  aboutP: "I am <strong>Faiz Ahmed Bhagett</strong>, a Senior IT Infrastructure Consultant with a global track record across Germany, Sweden, Belgium, and the USA. Having designed infrastructure systems for high-stakes environments like Deutsche Bank and Johnson & Johnson, I build architectures focusing strictly on elite stability, zero-trust security layouts, and long-term operating durability.",
+  contactTitle: "Connect With Me", infoTitle: "Contact Information", 
+  lblName: "Your Name / Company", lblEmail: "Email Address", lblSolution: "Required Solution",
+  optCloud: "Cloud Migration & M365", optSecurity: "IT Security Hardening", optNetwork: "Network Optimization", optGeneral: "General Inquiry",
+  lblMsg: "Message", btnSubmit: "Send Message", whatsappText: "Chat Direct with Faiz"
+ },
+ de: {
+  navHome: "Startseite", navServices: "Dienstleistungen", navAbout: "Über mich", navContact: "Kontakt",
+  heroH1: "Sichere & moderne IT-Infrastruktur-Services",
+  heroP: "Über 20 Jahre internationale Konzernerfahrung in der Bereitstellung stabiler Cloud-Migrationen, Unternehmensnetzwerke und wirksamer Cybersicherheits-Anpassungen.",
+  heroBtn: "Kostenlose Beratung buchen", servicesTitle: "Expertise & Dienstleistungen",
+  srv1H: "Cloud-Migrationen & M365", srv1P: "Strategische Migrationspfade, maßgeschneidert für komplexe Microsoft 365 Mandanten und Hybrid-Setups. Implementierung robuster Azure AD (Entra ID) Integrationen zur Gewährleistung von Single-Sign-On (SSO).",
+  srv2H: "Endpoint-Management", srv2P: "Optimierung der Gerätebereitstellung durch moderne Frameworks wie Microsoft Autopilot und automatisierte Bereitstellung. Wir entwickeln und erzwingen Zero-Trust-Compliance- und Konfigurationsrichtlinien.",
+  srv3H: "Infrastruktur-Härtung", srv3P: "Sorgfältige Bewertung und Stärkung Ihres gesamten digitalen Fußabdrucks gegen moderne Cyber-Bedrohungen. Implementierung strenger MFA-Richtlinien, Bedingungen für bedingten Zugriff und BitLocker-Verschlüsselungen.",
+  srv4H: "Unternehmensnetzwerke", srv4P: "Design und Bereitstellung hochsicherer, moderner Multi-VLAN-Switches und robuster RADIUS-Systeminfrastrukturen. Implementierung strenger AAA-Frameworks, um den Zugriff nur für konforme Geräte zu erlauben.",
+  srv5H: "IT-Support Vor-Ort und Remote", srv5P: "Schnell reagierende Helpdesk-Architekturen, die auf sofortige Problemlösung optimiert sind. Zuverlässige Fehlerbehebung vor Ort für den lokalen Betrieb sowie hochgradig skalierbare Remote-Administration.",
+  srv6H: "Citrix-Administration VDI und VMware", srv6P: "Erweiterte Virtualisierungsarchitektur mit Citrix Virtual DaaS und VMware Horizon Systemen. Spezialisiert auf die Entwicklung sicherer digitaler Arbeitsbereiche zur Verhinderung von Datenabfluss.",
+  aboutTitle: "Über Mich", 
+  aboutP: "Ich bin <strong>Faiz Ahmed Bhagett</strong>, ein Senior IT-Infrastrukturberater mit internationaler Erfahrung in Deutschland, Schweden, Belgien und den USA. Ich entwickle Systemarchitekturen mit Fokus auf Stabilität und Zero-Trust-Sicherheitslayouts.",
+  contactTitle: "Kontaktieren Sie Mich", infoTitle: "Kontaktinformationen", 
+  lblName: "Ihr Name / Unternehmen", lblEmail: "E-Mail-Adresse", lblSolution: "Gewünschte Lösung",
+  optCloud: "Cloud-Migration & M365", optSecurity: "IT-Sicherheitshärtung", optNetwork: "Network Optimization", optGeneral: "Allgemeine Anfrage",
+  lblMsg: "Nachricht", btnSubmit: "Nachricht senden", whatsappText: "Direkt mit Faiz chatten"
+ }
+};
 
+function setLanguage(lang) {
+ document.getElementById("nav-home").textContent = translations[lang].navHome;
+ document.getElementById("nav-services").textContent = translations[lang].navServices;
+ document.getElementById("nav-about").textContent = translations[lang].navAbout;
+ document.getElementById("nav-contact").textContent = translations[lang].navContact;
+ document.getElementById("hero-h1").textContent = translations[lang].heroH1;
+ document.getElementById("hero-p").textContent = translations[lang].heroP;
+ document.getElementById("hero-btn").textContent = translations[lang].heroBtn;
+ document.getElementById("services-title").textContent = translations[lang].servicesTitle;
+ document.getElementById("srv1-h").textContent = translations[lang].srv1H;
+ document.getElementById("srv1-p").textContent = translations[lang].srv1P;
+ document.getElementById("srv2-h").textContent = translations[lang].srv2H;
+ document.getElementById("srv2-p").textContent = translations[lang].srv2P;
+ document.getElementById("srv3-h").textContent = translations[lang].srv3H;
+ document.getElementById("srv3-p").textContent = translations[lang].srv3P;
+ 
+ if(document.getElementById("srv4-h")) document.getElementById("srv4-h").textContent = translations[lang].srv4H;
+ if(document.getElementById("srv4-p")) document.getElementById("srv4-p").textContent = translations[lang].srv4P;
+ if(document.getElementById("srv5-h")) document.getElementById("srv5-h").textContent = translations[lang].srv5H;
+ if(document.getElementById("srv5-p")) document.getElementById("srv5-p").textContent = translations[lang].srv5P;
+ if(document.getElementById("srv6-h")) document.getElementById("srv6-h").textContent = translations[lang].srv6H;
+ if(document.getElementById("srv6-p")) document.getElementById("srv6-p").textContent = translations[lang].srv6P;
+ 
+ document.getElementById("about-title").textContent = translations[lang].aboutTitle;
+ document.getElementById("about-p").innerHTML = translations[lang].aboutP;
+ 
+ document.getElementById("contact-title").textContent = translations[lang].contactTitle;
+ document.getElementById("info-title").textContent = translations[lang].infoTitle;
+ document.getElementById("lbl-name").textContent = translations[lang].lblName;
+ document.getElementById("lbl-email").textContent = translations[lang].lblEmail;
+ document.getElementById("lbl-solution").textContent = translations[lang].lblSolution;
+ document.getElementById("opt-cloud").textContent = translations[lang].optCloud;
+ document.getElementById("opt-security").textContent = translations[lang].optSecurity;
+ document.getElementById("opt-network").textContent = translations[lang].optNetwork;
+ document.getElementById("opt-general").textContent = translations[lang].optGeneral;
+ document.getElementById("lbl-msg").textContent = translations[lang].lblMsg;
+ document.getElementById("btn-submit").textContent = translations[lang].btnSubmit;
+ document.getElementById("whatsapp-text").textContent = translations[lang].whatsappText;
+}
+</script>
 </body>
 </html>
