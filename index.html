@@ -368,29 +368,33 @@ form button:hover {
    <p><strong>Email:</strong> Bhagett@yahoo.de</p>
   </div>
   <!-- Form Block -->
-  <div class="contact-form-wrapper">
-   <form action="#" method="POST">
-    <label for="name" id="lbl-name">Your Name / Company</label>
-    <input type="text" id="name" name="name" required>
-    
-    <label for="email" id="lbl-email">Email Address</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="solution" id="lbl-solution">Required Solution</label>
-    <select id="solution" name="solution">
-     <option value="cloud" id="opt-cloud">Cloud Migration & M365</option>
-     <option value="security" id="opt-security">IT Security Hardening</option>
-     <option value="network" id="opt-network">Network Optimization</option>
-     <option value="general" id="opt-general">General Inquiry</option>
-    </select>
-    
-    <label for="message" id="lbl-msg">Message</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-    
-    <button type="submit" id="btn-submit">Send Message</button>
-   </form>
-  </div>
- </div>
+<div class="contact-form-wrapper">
+
+<form action="https://formspree.io/f/xdavepnq" method="POST">
+
+<input type="text" id="name" name="name" placeholder="Your Name / Company" required>
+
+<label for="email" id="lbl-email">Email Address</label>
+<input type="email" id="email" name="email" required>
+
+<label for="solution" id="lbl-solution">Required Solution</label>
+<select id="solution" name="solution">
+  <option value="cloud">Cloud Migration & M365</option>
+  <option value="security">IT Security Hardening</option>
+  <option value="network">Network Optimization</option>
+  <option value="general">General Inquiry</option>
+</select>
+
+<label for="message" id="lbl-msg">Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+
+<button type="submit" id="btn-submit">Send Message</button>
+
+</form>
+
+</div>
+ 
+ 
 </section>
 
 <!-- Floating Universal WhatsApp Widget Link -->
