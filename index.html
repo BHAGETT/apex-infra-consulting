@@ -378,10 +378,15 @@ form button:hover {
 <input type="email" id="email" name="email" required>
 
 <label for="solution" id="lbl-solution">Required Solution</label>
-<select id="solution" name="solution">
-  <option value="cloud">Cloud Migration & M365</option>
-  <option value="security">IT Security Hardening</option>
+
+<select id="solution" name="solution" required>
+  <option value="">Select a Solution</option>
+  <option value="cloud">Cloud Infrastructure</option>
+  <option value="m365">Microsoft 365 / Cloud Migration</option>
+  <option value="security">Cyber Security Hardening</option>
   <option value="network">Network Optimization</option>
+  <option value="support">IT Support</option>
+  <option value="automation">Automation & DevOps</option>
   <option value="general">General Inquiry</option>
 </select>
 
