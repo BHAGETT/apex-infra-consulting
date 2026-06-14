@@ -1,26 +1,14 @@
-{
-  "name": "Faiz Ahmed Bhagett IT Consulting",
-  "short_name": "Faiz IT",
-  "description": "Secure & Modern IT Infrastructure Services by Faiz Ahmed Bhagett.",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
-  "orientation": "any",
-  "id": "faiz-it-consulting-app",
-  "categories": ["business", "productivity"],
-  "icons": [
-    {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    }
-  ]
-}
+"icons": [
+  {
+    "src": "app-icon-192.png",
+    "sizes": "192x192",
+    "type": "image/png",
+    "purpose": "any maskable"
+  },
+  {
+    "src": "app-icon-512.png",
+    "sizes": "512x512",
+    "type": "image/png",
+    "purpose": "any maskable"
+  }
+]
