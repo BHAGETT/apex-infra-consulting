@@ -1,0 +1,17 @@
+{
+  "name": "Faiz Ahmed Bhagett IT Consulting",
+  "short_name": "Faiz IT",
+  "description": "Secure & Modern IT Infrastructure Services by Faiz Ahmed Bhagett.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "https://vercel.app",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
