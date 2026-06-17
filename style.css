@@ -1,20 +1,25 @@
+/* Base Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.6;
 }
+
+/* Header Sections */
 header {
     background: #0f172a;
     color: #fff;
     padding: 20px 10%;
     position: fixed;
     width: 100%;
+    left: 0; /* Left fix kiya taaki layout right se baahar na bhaage */
     top: 0;
     z-index: 1000;
     display: flex;
@@ -22,11 +27,14 @@ header {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+/* Logo Design */
 .logo-container {
     display: flex;
     align-items: center;
     gap: 12px;
 }
+
 .logo-symbol {
     width: 36px;
     height: 36px;
@@ -39,6 +47,7 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
 }
+
 .logo-symbol::before {
     content: '';
     width: 16px;
@@ -47,6 +56,7 @@ header {
     border-radius: 4px;
     transform: rotate(45deg);
 }
+
 .logo-symbol::after {
     content: '';
     position: absolute;
@@ -55,15 +65,19 @@ header {
     background-color: #38bdf8;
     border-radius: 50%;
 }
+
 .logo-text {
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 0.5px;
     color: #fff;
 }
+
 .logo-text span {
     color: #38bdf8;
 }
+
+/* Navigation Links */
 nav a {
     color: #fff;
     text-decoration: none;
@@ -72,9 +86,12 @@ nav a {
     transition: color 0.3s;
     cursor: pointer;
 }
+
 nav a:hover {
     color: #38bdf8;
 }
+
+/* Hero Section */
 .hero {
     background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     color: #fff;
@@ -86,6 +103,7 @@ nav a:hover {
     gap: 50px;
     text-align: left;
 }
+
 .hero-image {
     flex: 0 0 320px;
     text-align: center;
@@ -93,6 +111,7 @@ nav a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .hero-image img {
     width: 280px;
     height: 280px;
@@ -102,21 +121,25 @@ nav a:hover {
     border: 4px solid #38bdf8;
     box-shadow: 0 8px 25px rgba(56, 189, 248, 0.35);
 }
+
 .hero-content {
     flex: 1;
     min-width: 300px;
 }
+
 .hero h1 {
     font-size: 42px;
     margin-bottom: 20px;
     line-height: 1.2;
 }
+
 .hero p {
     font-size: 18px;
     color: #cbd5e1;
     margin-bottom: 30px;
     max-width: 700px;
 }
+
 .cta-btn {
     background: #38bdf8;
     color: #0f172a;
@@ -128,12 +151,16 @@ nav a:hover {
     display: inline-block;
     text-align: center;
 }
+
 .cta-btn:hover {
     background: #0ea5e9;
 }
+
+/* General Layout Sections */
 .section {
     padding: 80px 10%;
 }
+
 .section h2 {
     font-size: 32px;
     text-align: center;
@@ -141,6 +168,7 @@ nav a:hover {
     color: #0f172a;
     position: relative;
 }
+
 .section h2::after {
     content: '';
     width: 60px;
@@ -150,11 +178,14 @@ nav a:hover {
     margin: 10px auto 0;
     border-radius: 2px;
 }
+
+/* Services Grid Layout */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
 }
+
 .service-card {
     background: #fff;
     padding: 30px;
@@ -163,13 +194,17 @@ nav a:hover {
     border-top: 4px solid #38bdf8;
     transition: transform 0.3s;
 }
+
 .service-card:hover {
     transform: translateY(-5px);
 }
+
 .service-card h3 {
     margin-bottom: 15px;
     color: #0f172a;
 }
+
+/* WhatsApp Chat Widget */
 .direct-chat-widget {
     position: fixed;
     bottom: 30px;
@@ -188,15 +223,19 @@ nav a:hover {
     transition: transform 0.3s, background 0.3s;
     animation: pulse 2s infinite;
 }
+
 .direct-chat-widget:hover {
     background: #128c7e;
     transform: scale(1.05);
 }
+
 @keyframes pulse {
     0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
     70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
     100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
+
+/* About Section */
 .about-text {
     max-width: 800px;
     margin: 0 auto;
@@ -204,12 +243,15 @@ nav a:hover {
     text-align: center;
     line-height: 1.8;
 }
+
+/* Contact Area Styles */
 .contact-container {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
 }
+
 .contact-info, .contact-form-wrapper {
     flex: 1;
     min-width: 300px;
@@ -218,21 +260,27 @@ nav a:hover {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+
 .contact-info h3 {
     margin-bottom: 20px;
     color: #0f172a;
 }
+
 .contact-info p {
     margin-bottom: 15px;
 }
+
+/* Forms Definition */
 form {
     display: flex;
     flex-direction: column;
 }
+
 label {
     margin-bottom: 5px;
     font-weight: 500;
 }
+
 input, textarea, select {
     padding: 10px;
     margin-bottom: 20px;
@@ -240,6 +288,7 @@ input, textarea, select {
     border-radius: 4px;
     font-size: 16px;
 }
+
 form button {
     background: #0f172a;
     color: #fff;
@@ -251,9 +300,12 @@ form button {
     font-weight: bold;
     transition: background 0.3s;
 }
+
 form button:hover {
     background: #1e293b;
 }
+
+/* Responsive Design Media Queries */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
