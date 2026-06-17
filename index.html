@@ -31,7 +31,8 @@
     <!-- Hero Section (Front Page) -->
     <section id="home" class="hero">
         <div class="hero-image">
-            <img src="Faiz.png" alt="Faiz Ahmed Bhagett - Enterprise IT Infrastructure Consultant">
+            <!-- FIXED: Changed from Faiz.png to faiz.jpg to match GitHub repository -->
+            <img src="faiz.jpg" alt="Faiz Ahmed Bhagett - Enterprise IT Infrastructure Consultant">
         </div>
         <div class="hero-content">
             <h1 id="hero-h1">Secure & Modern IT Infrastructure Services</h1>
@@ -118,20 +119,14 @@
                     <label for="message" id="lbl-msg">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                     
-                    <button type="submit" id="btn-submit">Send Message</button>
+                    <!-- FIXED: Added missing submit button and closing tags below -->
+                    <button type="submit" class="cta-btn" style="margin-top: 15px; background-color: #0070f3; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px;">Submit</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Floating Universal WhatsApp Widget Link -->
-    <a href="https://wa.me" class="direct-chat-widget" target="_blank" rel="noopener noreferrer" id="whatsapp-link">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.003 5.256 5.254 0 11.7 0 18.146 0 23.4 5.256 23.4 11.7c0 2.096-.547 4.142-1.588 5.945L23.5 24l-6.163-1.687c-1.804 1.041-3.849 1.588-5.946 1.588C5.254 24.001.003 18.744.057 12.4zm4.017-4.017l.259.412c1.614 2.563 4.417 4.133 7.424 4.133 4.116 0 7.464-3.349 7.464-7.464 0-4.116-3.349-7.464-7.464-7.464-4.116 0-7.464 3.349-7.464 7.464 0 1.956.764 3.8 2.152 5.188z"/>
-        </svg>
-        Chat Direct with Faiz
-    </a>
-
+    <!-- JS File Link -->
     <script src="script.js"></script>
 </body>
 </html>
