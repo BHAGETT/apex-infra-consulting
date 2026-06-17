@@ -30,7 +30,7 @@ const translations = {
         srv5H: "IT-Support Vor-Ort und Remote", srv5P: "Schnell reagierende Helpdesk-Architekturen, die auf sofortige Problemlösung optimiert sind. Zuverlässige Fehlerbehebung vor Ort für den lokalen Betrieb sowie hochgradig skalierbare Remote-Administration.",
         srv6H: "Citrix-Administration VDI und VMware", srv6P: "Erweiterte Virtualisierungsarchitektur mit Citrix Virtual DaaS und VMware Horizon Systemen. Spezialisiert auf die Entwicklung sicherer digitaler Arbeitsbereiche zur Verhinderung von Datenabfluss.",
         aboutTitle: "Über Mich",
-        aboutP: "Ich bin <strong>Faiz Ahmed Bhagett</strong>, ein Senior IT-Infrastrukturberater mit internationaler Erfahrung in Deutschland, Schweden, Premium-Belgien und den USA. Ich habe globale Client-Migrationen über 45 Länder via Remedyforce für KONE GmbH geleitet und Systeme für hochkarätige Umgebungen wie die Deutsche Bank und Johnson & Johnson entwickelt.",
+        aboutP: "Ich bin <strong>Faiz Ahmed Bhagett</strong>, ein Senior IT-Infrastrukturberater mit internationaler Erfahrung in Deutschland, Schweden, Premium-Belgien und den USA. Ich habe globale Client-Migrationen über 45 Länder via Remedyforce for KONE GmbH geleitet und Systeme für hochkarätige Umgebungen wie die Deutsche Bank und Johnson & Johnson entwickelt.",
         contactTitle: "Kontaktieren Sie Mich", infoTitle: "Contact Information",
         lblName: "Ihr Name / Unternehmen", lblEmail: "E-Mail-Adresse", lblSolution: "Gewünschte Lösung",
         optCloud: "Cloud-Migration & M365", optSecurity: "IT-Sicherheitshärtung", optNetwork: "Netzwerkoptimierung", optGeneral: "Allgemeine Anfrage",
@@ -52,4 +52,17 @@ function setLanguage(lang) {
     if(document.getElementById("srv1-p")) document.getElementById("srv1-p").textContent = translations[lang].srv1P;
     if(document.getElementById("srv2-h")) document.getElementById("srv2-h").textContent = translations[lang].srv2H;
     if(document.getElementById("srv2-p")) document.getElementById("srv2-p").textContent = translations[lang].srv2P;
-    if(document.getElementById("srv3-h")) document.
+    if(document.getElementById("srv3-h")) document.getElementById("srv3-h").textContent = translations[lang].srv3H;
+    if(document.getElementById("srv3-p")) document.getElementById("srv3-p").textContent = translations[lang].srv3P;
+    if(document.getElementById("srv4-h")) document.getElementById("srv4-h").textContent = translations[lang].srv4H;
+    if(document.getElementById("srv4-p")) document.getElementById("srv4-p").textContent = translations[lang].srv4P;
+    if(document.getElementById("srv5-h")) document.getElementById("srv5-h").textContent = translations[lang].srv5H;
+    if(document.getElementById("srv5-p")) document.getElementById("srv5-p").textContent = translations[lang].srv5P;
+    if(document.getElementById("srv6-h")) document.getElementById("srv6-h").textContent = translations[lang].srv6H;
+    if(document.getElementById("srv6-p")) document.getElementById("srv6-p").textContent = translations[lang].srv6P;
+    if(document.getElementById("about-title")) document.getElementById("about-title").textContent = translations[lang].aboutTitle;
+    if(document.getElementById("about-p")) document.getElementById("about-p").innerHTML = translations[lang].aboutP;
+    if(document.getElementById("contact-title")) document.getElementById("contact-title").textContent = translations[lang].contactTitle;
+    if(document.getElementById("info-title")) document.getElementById("info-title").textContent = translations[lang].infoTitle;
+    if(document.getElementById("lbl-name")) document.getElementById("lbl-name").textContent = translations[lang].lblName;
+    if(document.getElementById("lbl-email")) document.getElementById("lbl-email").textContent = translations[lang].lblEmail;
