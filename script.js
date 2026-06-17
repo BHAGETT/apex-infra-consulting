@@ -15,7 +15,8 @@ const translations = {
         contactTitle: "Connect With Me", infoTitle: "Contact Information",
         lblName: "Your Name / Company", lblEmail: "Email Address", lblSolution: "Required Solution",
         optCloud: "Cloud Migration & M365", optSecurity: "IT Security Hardening", optNetwork: "Network Optimization", optGeneral: "General Inquiry",
-        lblMsg: "Message", btnSubmit: "Send Message", whatsappText: "Chat Direct with Faiz"
+        lblMsg: "Message", btnSubmit: "Send Message", whatsappText: "Chat Direct with Faiz",
+        installBtn: "Install App"
     },
     de: {
         navHome: "Startseite", navServices: "Dienstleistungen", navAbout: "Über mich", navContact: "Kontakt",
@@ -29,11 +30,12 @@ const translations = {
         srv5H: "IT-Support Vor-Ort und Remote", srv5P: "Schnell reagierende Helpdesk-Architekturen, die auf sofortige Problemlösung optimiert sind. Zuverlässige Fehlerbehebung vor Ort für den lokalen Betrieb sowie hochgradig skalierbare Remote-Administration.",
         srv6H: "Citrix-Administration VDI und VMware", srv6P: "Erweiterte Virtualisierungsarchitektur mit Citrix Virtual DaaS und VMware Horizon Systemen. Spezialisiert auf die Entwicklung sicherer digitaler Arbeitsbereiche zur Verhinderung von Datenabfluss.",
         aboutTitle: "Über Mich",
-        aboutP: "Ich bin <strong>Faiz Ahmed Bhagett</strong>, ein Senior IT-Infrastrukturberater mit internationaler Erfahrung in Deutschland, Schweden, Belgien und den USA. Ich habe globale Client-Migrationen über 45 Länder via Remedyforce für KONE GmbH geleitet und Systeme für hochkarätige Umgebungen wie die Deutsche Bank und Johnson & Johnson entwickelt.",
-        contactTitle: "Kontaktieren Sie Mich", infoTitle: "Kontaktinformationen",
+        aboutP: "Ich bin <strong>Faiz Ahmed Bhagett</strong>, ein Senior IT-Infrastrukturberater mit internationaler Erfahrung in Deutschland, Schweden, Premium-Belgien und den USA. Ich habe globale Client-Migrationen über 45 Länder via Remedyforce für KONE GmbH geleitet und Systeme für hochkarätige Umgebungen wie die Deutsche Bank und Johnson & Johnson entwickelt.",
+        contactTitle: "Kontaktieren Sie Mich", infoTitle: "Contact Information",
         lblName: "Ihr Name / Unternehmen", lblEmail: "E-Mail-Adresse", lblSolution: "Gewünschte Lösung",
         optCloud: "Cloud-Migration & M365", optSecurity: "IT-Sicherheitshärtung", optNetwork: "Netzwerkoptimierung", optGeneral: "Allgemeine Anfrage",
-        lblMsg: "Nachricht", btnSubmit: "Nachricht senden", whatsappText: "Direkt mit Faiz chatten"
+        lblMsg: "Nachricht", btnSubmit: "Nachricht senden", whatsappText: "Direkt mit Faiz chatten",
+        installBtn: "App installieren"
     }
 };
 
