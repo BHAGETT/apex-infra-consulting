@@ -6,6 +6,7 @@
   "start_url": "/",
   "scope": "/",
   "lang": "en-US",
+  "dir": "ltr",
   "display": "standalone",
   "display_override": [
     "standalone",
@@ -45,6 +46,18 @@
       "type": "image/png",
       "form_factor": "wide",
       "label": "Desktop view of Apex Infra"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Services",
+      "url": "/#services",
+      "description": "View our services"
+    },
+    {
+      "name": "Contact",
+      "url": "/#contact",
+      "description": "Get in touch with us"
     }
   ]
 }
