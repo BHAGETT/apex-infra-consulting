@@ -39,31 +39,31 @@ const translations = {
     }
 };
 
-function setLanguage(lang) {
-    if(document.getElementById("nav-home")) document.getElementById("nav-home").textContent = translations[lang].navHome;
-    if(document.getElementById("nav-services")) document.getElementById("nav-services").textContent = translations[lang].navServices;
-    if(document.getElementById("nav-about")) document.getElementById("nav-about").textContent = translations[lang].navAbout;
-    if(document.getElementById("nav-contact")) document.getElementById("nav-contact").textContent = translations[lang].navContact;
-    if(document.getElementById("hero-h1")) document.getElementById("hero-h1").textContent = translations[lang].heroH1;
-    if(document.getElementById("hero-p")) document.getElementById("hero-p").textContent = translations[lang].heroP;
-    if(document.getElementById("hero-btn")) document.getElementById("hero-btn").textContent = translations[lang].heroBtn;
-    if(document.getElementById("services-title")) document.getElementById("services-title").textContent = translations[lang].servicesTitle;
-    if(document.getElementById("srv1-h")) document.getElementById("srv1-h").textContent = translations[lang].srv1H;
-    if(document.getElementById("srv1-p")) document.getElementById("srv1-p").textContent = translations[lang].srv1P;
-    if(document.getElementById("srv2-h")) document.getElementById("srv2-h").textContent = translations[lang].srv2H;
-    if(document.getElementById("srv2-p")) document.getElementById("srv2-p").textContent = translations[lang].srv2P;
-    if(document.getElementById("srv3-h")) document.getElementById("srv3-h").textContent = translations[lang].srv3H;
-    if(document.getElementById("srv3-p")) document.getElementById("srv3-p").textContent = translations[lang].srv3P;
-    if(document.getElementById("srv4-h")) document.getElementById("srv4-h").textContent = translations[lang].srv4H;
-    if(document.getElementById("srv4-p")) document.getElementById("srv4-p").textContent = translations[lang].srv4P;
-    if(document.getElementById("srv5-h")) document.getElementById("srv5-h").textContent = translations[lang].srv5H;
-    if(document.getElementById("srv5-p")) document.getElementById("srv5-p").textContent = translations[lang].srv5P;
-    if(document.getElementById("srv6-h")) document.getElementById("srv6-h").textContent = translations[lang].srv6H;
-    if(document.getElementById("srv6-p")) document.getElementById("srv6-p").textContent = translations[lang].srv6P;
-    if(document.getElementById("about-title")) document.getElementById("about-title").textContent = translations[lang].aboutTitle;
-    if(document.getElementById("about-p")) document.getElementById("about-p").innerHTML = translations[lang].aboutP;
-    if(document.getElementById("contact-title")) document.getElementById("contact-title").textContent = translations[lang].contactTitle;
-    if(document.getElementById("info-title")) document.getElementById("info-title").textContent = translations[lang].infoTitle;
-    if(document.getElementById("lbl-name")) document.getElementById("lbl-name").textContent = translations[lang].lblName;
-    if(document.getElementById("lbl-email")) document.getElementById("lbl-email").textContent = translations[lang].lblEmail;
-    if(document.getElementById("lbl-solution")) document.getElementById("lbl-solution").textContent = translations[lang].lblSolution;
+// Global scope window activation helper function for smooth dynamic language routing
+window.setLanguage = function(lang) {
+    if(translations[lang]) {
+        if(document.getElementById("nav-home")) document.getElementById("nav-home").textContent = translations[lang].navHome;
+        if(document.getElementById("nav-services")) document.getElementById("nav-services").textContent = translations[lang].navServices;
+        if(document.getElementById("nav-about")) document.getElementById("nav-about").textContent = translations[lang].navAbout;
+        if(document.getElementById("nav-contact")) document.getElementById("nav-contact").textContent = translations[lang].navContact;
+        if(document.getElementById("hero-h1")) document.getElementById("hero-h1").textContent = translations[lang].heroH1;
+        if(document.getElementById("hero-p")) document.getElementById("hero-p").textContent = translations[lang].heroP;
+        if(document.getElementById("hero-btn")) document.getElementById("hero-btn").textContent = translations[lang].heroBtn;
+        if(document.getElementById("services-title")) document.getElementById("services-title").textContent = translations[lang].servicesTitle;
+        if(document.getElementById("srv1-h")) document.getElementById("srv1-h").textContent = translations[lang].srv1H;
+        if(document.getElementById("srv1-p")) document.getElementById("srv1-p").textContent = translations[lang].srv1P;
+        if(document.getElementById("srv2-h")) document.getElementById("srv2-h").textContent = translations[lang].srv2H;
+        if(document.getElementById("srv2-p")) document.getElementById("srv2-p").textContent = translations[lang].srv2P;
+        if(document.getElementById("srv3-h")) document.getElementById("srv3-h").textContent = translations[lang].srv3H;
+        if(document.getElementById("srv3-p")) document.getElementById("srv3-p").textContent = translations[lang].srv3P;
+        if(document.getElementById("srv4-h")) document.getElementById("srv4-h").textContent = translations[lang].srv4H;
+        if(document.getElementById("srv4-p")) document.getElementById("srv4-p").textContent = translations[lang].srv4P;
+        if(document.getElementById("srv5-h")) document.getElementById("srv5-h").textContent = translations[lang].srv5H;
+        if(document.getElementById("srv5-p")) document.getElementById("srv5-p").textContent = translations[lang].srv5P;
+        if(document.getElementById("srv6-h")) document.getElementById("srv6-h").textContent = translations[lang].srv6H;
+        if(document.getElementById("srv6-p")) document.getElementById("srv6-p").textContent = translations[lang].srv6P;
+        if(document.getElementById("about-title")) document.getElementById("about-title").textContent = translations[lang].aboutTitle;
+        if(document.getElementById("about-p")) document.getElementById("about-p").innerHTML = translations[lang].aboutP;
+        if(document.getElementById("contact-title")) document.getElementById("contact-title").textContent = translations[lang].contactTitle;
+        if(document.getElementById("info-title")) document.getElementById("info-title").textContent = translations[lang].infoTitle;
+        if(document.getElementById("lbl-name")) document.getElementById("lbl-name").textContent = translations[lang].lblName;
