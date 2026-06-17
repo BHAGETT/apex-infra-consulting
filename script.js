@@ -66,3 +66,4 @@ function setLanguage(lang) {
     if(document.getElementById("info-title")) document.getElementById("info-title").textContent = translations[lang].infoTitle;
     if(document.getElementById("lbl-name")) document.getElementById("lbl-name").textContent = translations[lang].lblName;
     if(document.getElementById("lbl-email")) document.getElementById("lbl-email").textContent = translations[lang].lblEmail;
+    if(document.getElementById("lbl-solution")) document.getElementById("lbl-solution").textContent = translations[lang].lblSolution;
