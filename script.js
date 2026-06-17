@@ -3,7 +3,7 @@ const translations = {
         navHome: "Home", navServices: "Services", navAbout: "About", navContact: "Contact",
         heroH1: "Secure & Modern IT Infrastructure Services",
         heroP: "22+ Years of Enterprise IT Experience managing global cloud migrations across 45 countries for KONE GmbH via Remedyforce, Deutsche Bank, and Johnson & Johnson.",
-        heroBtn: "Book a Free 15-Minute IT Assessment Call", servicesTitle: "Expertise & Services",
+        heroBtn: "Book Free Consultation", servicesTitle: "Expertise & Services",
         srv1H: "Cloud Transitions & M365", srv1P: "Strategic migration paths tailored for complex Microsoft 365 tenants and hybrid setups. Implement robust Azure AD (Entra ID) integrations to guarantee secure, single-sign-on (SSO) environments across your enterprise. Build automated user lifecycle frameworks to minimize administrative overhead while maximizing cloud ROI and data compliance.",
         srv2H: "Endpoint Management", srv2P: "Streamline device provisioning using advanced modern frameworks like Microsoft Autopilot and automated imaging. We engineer and enforce zero-trust compliance, configuration, and app protection policies across your entire fleet. Seamlessly manage, patch, and monitor corporate endpoints using tailored Microsoft Intune and SCCM/MECM hybrid technologies.",
         srv3H: "Infrastructure Hardening", srv3P: "Thoroughly evaluate and fortify your entire digital footprint against modern, sophisticated cyber threats. Implement strict Multi-Factor Authentication (MFA) policies, Conditional Access rules, and full-disk BitLocker mechanisms. Design resilient, encrypted virtual desktop infrastructures (VDI) and secure remote access gateways like ZScaler.",
@@ -22,7 +22,7 @@ const translations = {
         navHome: "Startseite", navServices: "Dienstleistungen", navAbout: "Über mich", navContact: "Kontakt",
         heroH1: "Sichere & moderne IT-Infrastruktur-Services",
         heroP: "Über 22 Jahre internationale Konzernerfahrung mit globalen Cloud-Migrationen in 45 Ländern für KONE GmbH via Remedyforce, Deutsche Bank und Johnson & Johnson.",
-        heroBtn: "Kostenlosen 15-Minuten IT-Check buchen", servicesTitle: "Expertise & Dienstleistungen",
+        heroBtn: "Kostenlose Beratung buchen", servicesTitle: "Expertise & Dienstleistungen",
         srv1H: "Cloud-Migrationen & M365", srv1P: "Strategische Migrationspfade, maßgeschneidert für komplexe Microsoft 365 Mandanten und Hybrid-Setups. Implementierung robuster Azure AD (Entra ID) Integrationen zur Gewährleistung von Single-Sign-On (SSO).",
         srv2H: "Endpoint-Management", srv2P: "Optimierung der Gerätebereitstellung durch moderne Frameworks like Microsoft Autopilot und automatisierte Bereitstellung. Wir entwickeln und erzwingen Zero-Trust-Compliance- und Konfigurationsrichtlinien.",
         srv3H: "Infrastruktur-Härtung", srv3P: "Sorgfältige Bewertung und Stärkung Ihres gesamten digitalen Fußabdrucks gegen moderne Cyber-Bedrohungen. Implementierung strenger MFA-Richtlinien, Bedingungen für bedingten Zugriff und BitLocker-Verschlüsselungen.",
@@ -52,17 +52,4 @@ function setLanguage(lang) {
     if(document.getElementById("srv1-p")) document.getElementById("srv1-p").textContent = translations[lang].srv1P;
     if(document.getElementById("srv2-h")) document.getElementById("srv2-h").textContent = translations[lang].srv2H;
     if(document.getElementById("srv2-p")) document.getElementById("srv2-p").textContent = translations[lang].srv2P;
-    if(document.getElementById("srv3-h")) document.getElementById("srv3-h").textContent = translations[lang].srv3H;
-    if(document.getElementById("srv3-p")) document.getElementById("srv3-p").textContent = translations[lang].srv3P;
-    if(document.getElementById("srv4-h")) document.getElementById("srv4-h").textContent = translations[lang].srv4H;
-    if(document.getElementById("srv4-p")) document.getElementById("srv4-p").textContent = translations[lang].srv4P;
-    if(document.getElementById("srv5-h")) document.getElementById("srv5-h").textContent = translations[lang].srv5H;
-    if(document.getElementById("srv5-p")) document.getElementById("srv5-p").textContent = translations[lang].srv5P;
-    if(document.getElementById("srv6-h")) document.getElementById("srv6-h").textContent = translations[lang].srv6H;
-    if(document.getElementById("srv6-p")) document.getElementById("srv6-p").textContent = translations[lang].srv6P;
-    if(document.getElementById("about-title")) document.getElementById("about-title").textContent = translations[lang].aboutTitle;
-    if(document.getElementById("about-p")) document.getElementById("about-p").innerHTML = translations[lang].aboutP;
-    if(document.getElementById("contact-title")) document.getElementById("contact-title").textContent = translations[lang].contactTitle;
-    if(document.getElementById("info-title")) document.getElementById("info-title").textContent = translations[lang].infoTitle;
-    if(document.getElementById("lbl-name")) document.getElementById("lbl-name").textContent = translations[lang].lblName;
-    if(document.getElementById("lbl-email")) document.getElementById("lbl-email").textContent = translations[lang].lblEmail;
+    if(document.getElementById("srv3-h")) document.
