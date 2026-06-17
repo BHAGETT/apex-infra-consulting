@@ -22,18 +22,18 @@
   ],
   "screenshots": [
     {
-      "src": "screenshot-desktop.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "Desktop view of Apex Infra"
-    },
-    {
-      "src": "screenshot-mobile.png",
-      "sizes": "720x1280",
+      "src": "apex-infra-consulting.vercel.app_(Pixel 7).png",
+      "sizes": "1082x14871",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Mobile view of Apex Infra"
+    },
+    {
+      "src": "apex-infra-consulting.vercel.app_ (1).png",
+      "sizes": "2560x5744",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop view of Apex Infra"
     }
   ]
 }
