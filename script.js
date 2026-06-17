@@ -30,7 +30,7 @@ const translations = {
         srv5H: "IT-Support Vor-Ort und Remote", srv5P: "Schnell reagierende Helpdesk-Architekturen, die auf sofortige Problemlösung optimiert sind. Zuverlässige Fehlerbehebung vor Ort für den lokalen Betrieb sowie hochgradig skalierbare Remote-Administration.",
         srv6H: "Citrix-Administration VDI und VMware", srv6P: "Erweiterte Virtualisierungsarchitektur mit Citrix Virtual DaaS und VMware Horizon Systemen. Spezialisiert auf die Entwicklung sicherer digitaler Arbeitsbereiche zur Verhinderung von Datenabfluss.",
         aboutTitle: "Über Mich",
-        aboutP: "Ich bin <strong>Faiz Ahmed Bhagett</strong>, ein Senior IT-Infrastrukturberater mit internationaler Erfahrung in Deutschland, Schweden, Premium-Belgien und den USA. Ich habe globale Client-Migrationen über 45 Länder via Remedyforce für KONE GmbH geleitet und Systeme für hochkarätige Umgebungen wie die Deutsche Bank und Johnson & Johnson entwickelt.",
+        aboutP: "Ich bin <strong>Faiz Ahmed Bhagett</strong>, ein Senior IT-Infrastrukturberater mit internationaler Erfahrung in Deutschland, Schweden, Premium-Belgien und den USA. Ich habe globale Client-Migrationen über 45 Länder via Remedyforce für KONE GmbH geleitet und Systeme für hochkarätige umgebungen wie die Deutsche Bank und Johnson & Johnson entwickelt.",
         contactTitle: "Kontaktieren Sie Mich", infoTitle: "Contact Information",
         lblName: "Ihr Name / Unternehmen", lblEmail: "E-Mail-Adresse", lblSolution: "Gewünschte Lösung",
         optCloud: "Cloud-Migration & M365", optSecurity: "IT-Sicherheitshärtung", optNetwork: "Netzwerkoptimierung", optGeneral: "Allgemeine Anfrage",
