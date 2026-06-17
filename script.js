@@ -84,27 +84,21 @@ window.setLanguage = function(lang) {
     // Contact Form & Info
     setText("contact-title", t.contactTitle);
     setText("info-title", t.infoTitle);
-    setText("btn-submit", t.btnSubmit);
-    setText("whatsapp-text", t.whatsappText);
-
-    // Form Labels
+    
+    // Labels & Form Elements
     setText("lbl-name", t.lblName);
     setText("lbl-email", t.lblEmail);
     setText("lbl-solution", t.lblSolution);
-    setText("lbl-msg", t.lblMsg);
-
-    // Dropdown Options
+    setText("opt-general", t.optGeneral);
     setText("opt-cloud", t.optCloud);
     setText("opt-security", t.optSecurity);
     setText("opt-network", t.optNetwork);
-    setText("opt-general", t.optGeneral);
+    setText("lbl-msg", t.lblMsg);
+    setText("btn-submit", t.btnSubmit);
 
-    // Active button styling manage karne ke liye optional add-on
-    localStorage.setItem("selectedLanguage", lang);
+    // Dynamic WhatsApp Native Tooltip text translator
+    const waFloat = document.querySelector(".whatsapp-float");
+    if (waFloat) {
+        waFloat.setAttribute("title", t.whatsappText);
+    }
 };
-
-// Page load hote hi user ki pichli language select karne ke liye
-document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem("selectedLanguage") || "en";
-    window.setLanguage(savedLang);
-});
