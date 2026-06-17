@@ -7,6 +7,8 @@
     <link rel="manifest" href="/site.webmanifest">
     <!-- CSS File Link -->
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome Link for WhatsApp Icon -->
+    <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
@@ -23,15 +25,14 @@
             <a href="#contact" id="nav-contact">Contact</a>
             <!-- New Install Button -->
             <a id="install-btn" style="display: none; background-color: #0070f3; color: white; border-radius: 4px; padding: 4px 8px; font-weight: bold; cursor: pointer;">Install App</a>
-            <a onclick="setLanguage('en')">EN</a>
-            <a onclick="setLanguage('de')">DE</a>
+            <a href="#" onclick="setLanguage('en'); return false;">EN</a>
+            <a href="#" onclick="setLanguage('de'); return false;">DE</a>
         </nav>
     </header>
 
     <!-- Hero Section (Front Page) -->
     <section id="home" class="hero">
         <div class="hero-image">
-            <!-- FIXED: Changed from Faiz.png to faiz.jpg to match GitHub repository -->
             <img src="faiz.jpg" alt="Faiz Ahmed Bhagett - Enterprise IT Infrastructure Consultant">
         </div>
         <div class="hero-content">
@@ -41,7 +42,7 @@
             <!-- Left Button: Purani tarah safe contact option -->
             <a href="#contact" class="cta-btn" id="hero-btn">Book Free Consultation</a>
             
-            <!-- Right Button: Isme target="_blank" lagaya hai taake click karne par direct external link naye tab mein bina block hue open ho -->
+            <!-- Right Button -->
             <a href="https://calendly.com" target="_blank" class="cta-btn" id="assessment-btn" style="background-color: #2563eb; color: #ffffff; margin-left: 10px;">Book a Free 15-Minute IT Assessment Call</a>
         </div>
     </section>
@@ -119,12 +120,16 @@
                     <label for="message" id="lbl-msg">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                     
-                    <!-- FIXED: Added missing submit button and closing tags below -->
-                    <button type="submit" class="cta-btn" style="margin-top: 15px; background-color: #0070f3; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px;">Submit</button>
+                    <button type="submit" id="btn-submit" class="cta-btn" style="margin-top: 15px; background-color: #0070f3; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px;">Submit</button>
                 </form>
             </div>
         </div>
     </section>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me" class="whatsapp-float" target="_blank" style="position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: #25d366; color: #fff; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100; display: flex; align-items: center; justify-content: center; text-decoration: none;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- JS File Link -->
     <script src="script.js"></script>
