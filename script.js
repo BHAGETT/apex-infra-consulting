@@ -31,7 +31,7 @@ const translations = {
         srv6H: "Citrix-Administration VDI und VMware", srv6P: "Erweiterte Virtualisierungsarchitektur mit Citrix Virtual DaaS und VMware Horizon Systemen. Spezialisiert auf die Entwicklung sicherer digitaler Arbeitsbereiche zur Verhinderung von Datenabfluss.",
         aboutTitle: "Über Mich",
         aboutP: "Ich bin <strong>Faiz Ahmed Bhagett</strong>, ein Senior IT-Infrastrukturberater mit internationaler Erfahrung in Deutschland, Schweden, Premium-Belgien und den USA. Ich habe globale Client-Migrationen über 45 Länder via Remedyforce for KONE GmbH geleitet und Systeme für hochkarätige Umgebungen wie die Deutsche Bank und Johnson & Johnson entwickelt.",
-        contactTitle: "Kontaktieren Sie Mich", infoTitle: "Contact Information",
+        contactTitle: "Kontaktieren Sie Mich", infoTitle: "Kontaktinformationen",
         lblName: "Ihr Name / Unternehmen", lblEmail: "E-Mail-Adresse", lblSolution: "Gewünschte Lösung",
         optCloud: "Cloud-Migration & M365", optSecurity: "IT-Sicherheitshärtung", optNetwork: "Netzwerkoptimierung", optGeneral: "Allgemeine Anfrage",
         lblMsg: "Nachricht", btnSubmit: "Nachricht senden", whatsappText: "Direkt mit Faiz chatten",
@@ -39,31 +39,72 @@ const translations = {
     }
 };
 
-// Global scope window activation helper function for smooth dynamic language routing
 window.setLanguage = function(lang) {
-    if(translations[lang]) {
-        if(document.getElementById("nav-home")) document.getElementById("nav-home").textContent = translations[lang].navHome;
-        if(document.getElementById("nav-services")) document.getElementById("nav-services").textContent = translations[lang].navServices;
-        if(document.getElementById("nav-about")) document.getElementById("nav-about").textContent = translations[lang].navAbout;
-        if(document.getElementById("nav-contact")) document.getElementById("nav-contact").textContent = translations[lang].navContact;
-        if(document.getElementById("hero-h1")) document.getElementById("hero-h1").textContent = translations[lang].heroH1;
-        if(document.getElementById("hero-p")) document.getElementById("hero-p").textContent = translations[lang].heroP;
-        if(document.getElementById("hero-btn")) document.getElementById("hero-btn").textContent = translations[lang].heroBtn;
-        if(document.getElementById("services-title")) document.getElementById("services-title").textContent = translations[lang].servicesTitle;
-        if(document.getElementById("srv1-h")) document.getElementById("srv1-h").textContent = translations[lang].srv1H;
-        if(document.getElementById("srv1-p")) document.getElementById("srv1-p").textContent = translations[lang].srv1P;
-        if(document.getElementById("srv2-h")) document.getElementById("srv2-h").textContent = translations[lang].srv2H;
-        if(document.getElementById("srv2-p")) document.getElementById("srv2-p").textContent = translations[lang].srv2P;
-        if(document.getElementById("srv3-h")) document.getElementById("srv3-h").textContent = translations[lang].srv3H;
-        if(document.getElementById("srv3-p")) document.getElementById("srv3-p").textContent = translations[lang].srv3P;
-        if(document.getElementById("srv4-h")) document.getElementById("srv4-h").textContent = translations[lang].srv4H;
-        if(document.getElementById("srv4-p")) document.getElementById("srv4-p").textContent = translations[lang].srv4P;
-        if(document.getElementById("srv5-h")) document.getElementById("srv5-h").textContent = translations[lang].srv5H;
-        if(document.getElementById("srv5-p")) document.getElementById("srv5-p").textContent = translations[lang].srv5P;
-        if(document.getElementById("srv6-h")) document.getElementById("srv6-h").textContent = translations[lang].srv6H;
-        if(document.getElementById("srv6-p")) document.getElementById("srv6-p").textContent = translations[lang].srv6P;
-        if(document.getElementById("about-title")) document.getElementById("about-title").textContent = translations[lang].aboutTitle;
-        if(document.getElementById("about-p")) document.getElementById("about-p").innerHTML = translations[lang].aboutP;
-        if(document.getElementById("contact-title")) document.getElementById("contact-title").textContent = translations[lang].contactTitle;
-        if(document.getElementById("info-title")) document.getElementById("info-title").textContent = translations[lang].infoTitle;
-        if(document.getElementById("lbl-name")) document.getElementById("lbl-name").textContent = translations[lang].lblName;
+    if (!translations[lang]) return;
+
+    const t = translations[lang];
+
+    // Helper functions map check karne ke liye
+    const setText = (id, text) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = text;
+    };
+    const setHtml = (id, html) => {
+        const el = document.getElementById(id);
+        if (el) el.innerHTML = html;
+    };
+
+    // Navigation & Buttons
+    setText("nav-home", t.navHome);
+    setText("nav-services", t.navServices);
+    setText("nav-about", t.navAbout);
+    setText("nav-contact", t.navContact);
+    setText("install-btn", t.installBtn);
+
+    // Hero Section
+    setText("hero-h1", t.heroH1);
+    setText("hero-p", t.heroP);
+    setText("hero-btn", t.heroBtn);
+
+    // Services Section Title
+    setText("services-title", t.servicesTitle);
+
+    // Service Cards Headers & Paragraphs
+    setText("srv1-h", t.srv1H); setText("srv1-p", t.srv1P);
+    setText("srv2-h", t.srv2H); setText("srv2-p", t.srv2P);
+    setText("srv3-h", t.srv3H); setText("srv3-p", t.srv3P);
+    setText("srv4-h", t.srv4H); setText("srv4-p", t.srv4P);
+    setText("srv5-h", t.srv5H); setText("srv5-p", t.srv5P);
+    setText("srv6-h", t.srv6H); setText("srv6-p", t.srv6P);
+
+    // About Section (Yahan .innerHTML use hoga kyunki <strong> tag hai)
+    setText("about-title", t.aboutTitle);
+    setHtml("about-p", t.aboutP);
+
+    // Contact Form & Info
+    setText("contact-title", t.contactTitle);
+    setText("info-title", t.infoTitle);
+    setText("btn-submit", t.btnSubmit);
+    setText("whatsapp-text", t.whatsappText);
+
+    // Form Labels
+    setText("lbl-name", t.lblName);
+    setText("lbl-email", t.lblEmail);
+    setText("lbl-solution", t.lblSolution);
+    setText("lbl-msg", t.lblMsg);
+
+    // Dropdown Options
+    setText("opt-cloud", t.optCloud);
+    setText("opt-security", t.optSecurity);
+    setText("opt-network", t.optNetwork);
+    setText("opt-general", t.optGeneral);
+
+    // Active button styling manage karne ke liye optional add-on
+    localStorage.setItem("selectedLanguage", lang);
+};
+
+// Page load hote hi user ki pichli language select karne ke liye
+document.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("selectedLanguage") || "en";
+    window.setLanguage(savedLang);
+});
