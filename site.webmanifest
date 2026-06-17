@@ -8,6 +8,11 @@
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "orientation": "any",
+  "categories": [
+    "business",
+    "productivity"
+  ],
+  "iarc_rating_id": "e7498c8e-a9ba-47bc-96b6-8a0a91176b61",
   "icons": [
     {
       "src": "app-icon-192.png",
