@@ -4,11 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faiz Ahmed Bhagett | Enterprise IT Infrastructure Consultant</title>
-    <!-- Tailwind CSS CDN Link styling ke liye (Aap apna custom CSS path bhi laga sakte hain) -->
+    <!-- Sahi Tailwind CSS CDN Link styling ke liye -->
     <script src="https://jsdelivr.net"></script>
     <style>
         html { scroll-behavior: smooth; }
         .active-lang { font-weight: bold; border-bottom: 2px solid #3b82f6; }
+        
+        /* WhatsApp Widget Styling */
+        .direct-chat-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25d366;
+            color: white !important;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none !important;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            transition: transform 0.3s, background 0.3s;
+            animation: pulse 2s infinite;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+        .direct-chat-widget:hover {
+            background: #128c7e;
+            transform: scale(1.05);
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
@@ -92,29 +123,13 @@
     <section id="about" class="bg-gray-100 py-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-4xl mx-auto">
             <h2 id="about-title" class="text-3xl font-bold text-gray-900 mb-6 text-center">About Me</h2>
-            <div class="bg-white p-8 rounded-xl shadow-xs leading-relaxed text-gray-700 space-y-4 text-base">
-                <p id="about-p">I am <strong>Faiz Ahmed Bhagett</strong>, a Senior IT Infrastructure Consultant with a global track record across Germany, Sweden, Belgium, and the USA. Having managed massive global client migrations across 45 countries via Remedyforce for KONE GmbH, and engineered systems for high-stakes environments like Deutsche Bank and Johnson & Johnson, I build enterprise architectures focused strictly on elite stability, zero-trust layouts, and maximum uptime durability.</p>
+            <div class="bg-white p-8 rounded-xl shadow-xs">
+                <p class="text-gray-600 text-center">Your introductory or remaining content goes here...</p>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            
-            <!-- Contact Info -->
-            <div class="space-y-6">
-                <h2 id="contact-title" class="text-3xl font-bold text-gray-900">Connect With Me</h2>
-                <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 space-y-4">
-                    <h3 id="info-title" class="text-lg font-bold text-blue-900">Contact Information</h3>
-                    <p class="text-gray-700">
-                        <strong>Faiz Ahmed Bhagett IT Consulting</strong><br>
-                        Kirchstraße 42,<br>
-                        65376 Oestrich-Winkel,<br>
-                        Deutschland
-                    </p>
-                    <p class="text-gray-700"><strong>Phone:</strong> 0171 6780015 / +49 171 6780015</p>
-                    <p class="text-gray-700"><strong>Email:</strong> Bhagett@yahoo.de</p>
-                </div>
-                
-                <!-- CRITICAL FIXED WHATSAPP LINK -->
+    <!-- WHATSAPP FLOATING CHAT WIDGET -->
+    <!-- Apne number ke mutabiq 923XXXXXXXXX ko change karlein bina '+' sign ke -->
+    <a href="https://wa.me" class="direct-chat-widget" target="_blank">
+        <svg style="width:24px; height:24px;" viewBox="0 0 24 24" fill="currentColor">
