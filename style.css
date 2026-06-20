@@ -357,3 +357,8 @@ form button:hover {
 .academy-btn:hover {
     background-color: #004085;
 }
+.affiliate-container { display: flex; gap: 20px; flex-wrap: wrap; margin: 30px 0; justify-content: center; }
+.affiliate-card { border: 1px solid #e0e0e0; padding: 25px; border-radius: 12px; width: 280px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); background: #fff; display: flex; flex-direction: column; justify-content: space-between; }
+nav { display: flex !important; gap: 8px !important; align-items: center !important; flex-wrap: nowrap !important; }
+nav a { font-size: 13px !important; white-space: nowrap !important; }
+
