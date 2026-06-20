@@ -15,11 +15,12 @@
             <div class="logo-symbol"></div>
             <div class="logo-text">APEX INFRA <span>CONSULTING</span></div>
         </div>
-        <nav>
+               <nav>
             <a href="#home" id="nav-home">Home</a>
             <a href="#services" id="nav-services">Services</a>
             <a href="#about" id="nav-about">About</a>
-            <a href="#products">Digital Products</a>
+			<a href="#products">Digital Products</a>
+  <a href="#academy" id="nav-academy" style="color: #ffffff; font-weight: bold;">IT Academy</a>
             <a href="#contact" id="nav-contact">Contact</a>
             <a id="install-btn" style="display: none; background-color: #0070f3; color: white; border-radius: 4px; padding: 4px 8px; font-weight: bold; cursor: pointer;">Install App</a>
             <a href="javascript:void(0);" onclick="setLanguage('en');">EN</a>
@@ -99,6 +100,30 @@
 
         </div>
     </section>
+    <!-- IT Academy Section -->
+    <section id="academy" class="section" style="background-color: #f9f9f9; padding: 60px 20px;">
+        <h2 id="academy-title" style="text-align: center; margin-bottom: 10px; color: #333;">Apex IT Academy</h2>
+        <p style="text-align: center; color: #555; max-width: 800px; margin: 0 auto 40px; font-size: 1.1rem;">
+            Learn IT From an Enterprise Expert. Hands-On Labs, Real Equipment in Oestrich-Winkel.
+        </p>
+        <div class="services-grid">
+            <div class="academy-card">
+                <h3>🛠️ IT Support Specialist</h3>
+                <p>Master WDS/MDT OS deployment, Active Directory user management, group policies, enterprise hardware troubleshooting, and live incident ticketing tracking in ServiceNow.</p>
+				<button class="academy-btn" onclick="document.getElementById('solution').value='academy'; window.location.href='#contact';">Register for Onsite Lab</button>
+            </div>
+            <div class="academy-card">
+                <h3>🌐 Network Technician</h3>
+                <p>Get hands-on with real Cisco & Aruba switches. Learn physical rack patching, multi-VLAN segmentation, trunking configuration, DHCP/DNS infrastructure, and AAA RADIUS authentication.</p>
+			<button class="academy-btn" onclick="document.getElementById('solution').value='academy'; window.location.href='#contact';">Register for Onsite Lab</button>
+            </div>
+            <div class="academy-card">
+                <h3>🖥️ System Administrator</h3>
+                <p>Advance your career with cloud engineering. Manage Microsoft 365 tenants, enterprise Azure AD setups, automated modern endpoint deployment via Intune/SCCM, and VMware virtualization.</p>
+                <button class="academy-btn" onclick="document.getElementById('solution').value='academy'; window.location.href='#contact';">Register for Onsite Lab</button>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about" class="section" style="background-color: #fff;">
@@ -134,7 +159,7 @@
                         <option value="security" id="opt-security">IT Security Hardening</option>
                         <option value="network" id="opt-network">Network Optimization</option>
                         <option value="support">IT Support</option>
-                        <option value="automation">Automation & DevOps</option>
+                        <option value="academy" id="opt-academy">IT Academy Onsite Lab Training</option>
                     </select>
                     
                     <label for="message" id="lbl-msg">Message</label>
@@ -154,5 +179,5 @@
     </a>
 
     <script src="script.js"></script>
-</body>
+	</body>
 </html>
