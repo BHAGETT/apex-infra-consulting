@@ -102,13 +102,4 @@ window.setLanguage = function(lang) {
         waFloat.setAttribute("title", t.whatsappText);
     }
 };
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll('.academy-btn').forEach(button => {
-        button.addEventListener('click', (e) => {
-            const card = e.target.closest('.academy-card');
-            const courseName = card.querySelector('h3').innerText;
-            alert(`Thank you for your interest in ${courseName}! Registration details will be sent to your email.`);
-        });
-    });
-});
 
