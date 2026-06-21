@@ -1,3 +1,4 @@
+body { background-image: url('bg.jpg'); background-size: cover; }
 /* Base Reset */
 * {
     margin: 0;
@@ -93,7 +94,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background: linear-gradient(135deg, ##0b111e 0%, #152238 100%);
     color: #fff;
     padding: 160px 10% 100px;
     display: flex;
@@ -115,11 +116,10 @@ nav a:hover {
 .hero-image img {
     width: 280px;
     height: 280px;
-    border-radius: 50%;
+    border-radius: 0%;
     object-fit: cover;
     object-position: center;
-    border: 4px solid #38bdf8;
-    box-shadow: 0 8px 25px rgba(56, 189, 248, 0.35);
+        box-shadow: 0 8px 25px rgba(56, 189, 248, 0.35);
 }
 
 .hero-content {
@@ -165,10 +165,11 @@ nav a:hover {
     font-size: 32px;
     text-align: center;
     margin-bottom: 40px;
-    color: #0f172a;
+    color: #ffffff;
     position: relative;
 }
 
+}
 .section h2::after {
     content: '';
     width: 60px;
@@ -179,6 +180,7 @@ nav a:hover {
     border-radius: 2px;
 }
 
+
 /* Services Grid Layout */
 .services-grid {
     display: grid;
@@ -187,12 +189,17 @@ nav a:hover {
 }
 
 .service-card {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-top: 4px solid #38bdf8;
-    transition: transform 0.3s;
+    color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 }
 
 .service-card:hover {
@@ -365,4 +372,323 @@ nav a { font-size: 13px !important; white-space: nowrap !important; }
     nav { overflow-x: auto !important; white-space: nowrap !important; max-width: 100% !important; padding: 10px !important; display: flex !important; gap: 12px !important; }
     nav::-webkit-scrollbar { display: none; } /* Hides ugly scrollbar on mobile */
 }
+header {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding: 10px 20px !important;
+    box-sizing: border-box !important;
+}
 
+/* Menu items ke beech ki space bohot kam (tight) karne ke liye */
+header nav {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important; /* Spacing kam kar di taaki sab screen par fit aaye */
+    position: static !important;
+    margin-left: auto !important;
+}
+
+header nav a {
+    position: static !important;
+    display: inline-flex !important;
+    font-size: 14px !important; /* Font size thoda chota kiya taaki clean lage */
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+}
+
+/* Install App button ko wapas chupani ke liye */
+#install-btn {
+    display: none !important;
+}
+body { 
+    background-image: url('bg.jpg'); 
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+}
+.academy-card, .tool-card, .hardware-card, .checklist-card, .card {
+    background: rgba(255, 255, 255, 0.07) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-top: 4px solid #38bdf8 !important;
+    color: #ffffff !important;
+}
+.academy-card h3, .tool-card h3, .hardware-card h3, .checklist-card h3, .card h3 {
+    color: #38bdf8 !important;
+}
+.affiliate-card {
+    background: rgba(255, 255, 255, 0.07) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-top: 4px solid #38bdf8 !important;
+    color: #ffffff !important;
+    padding: 25px !important;
+    border-radius: 12px !important;
+}
+.affiliate-card h3 {
+    color: #38bdf8 !important;
+}
+.contact-info, .contact-form, form {
+    background: rgba(255, 255, 255, 0.07) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-top: 4px solid #38bdf8 !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+}
+.contact-info h3, .contact-form h3, label {
+    color: #38bdf8 !important;
+}
+input, textarea, select {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.contact-info, .contact-form-wrapper {
+    background: rgba(255, 255, 255, 0.07) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-top: 4px solid #38bdf8 !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 30px !important;
+}
+.contact-info h3, #lbl-name, label {
+    color: #38bdf8 !important;
+}
+.contact-form-wrapper input, .contact-form-wrapper textarea, .contact-form-wrapper select {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+.contact-form-wrapper form {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+.contact-form-wrapper > form, form {
+    background: transparent !important;
+    border: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+/* Solution drop-down ka text color theek karne ke liye */
+select option {
+    background-color: #152238 !important;
+    color: #ffffff !important;
+}
+
+/* Extra quatation mark (") ko chhupane ke liye */
+.contact-form-wrapper::before, .contact-form-wrapper form::before {
+    content: none !important;
+}
+#products-title {
+    color: #ffffff !important;
+}
+.service-card {
+    background: #152238 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+.service-card, .academy-card, .tool-card, .hardware-card, .checklist-card, .affiliate-card, .contact-info, .contact-form-wrapper {
+    background: rgba(15, 23, 42, 0.65) !important; /* thora solid dark glass */
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(56, 189, 248, 0.2) !important;
+}
+.service-card h3, .academy-card h3, .tool-card h3, .hardware-card h3, .checklist-card h3, .affiliate-card h3, .contact-info h3 {
+    color: #38bdf8 !important; /* heading saaf cyan dikhegi */
+}
+.service-card, .academy-card, .tool-card, .hardware-card, .checklist-card, .affiliate-card, .contact-info, .contact-form-wrapper {
+    background: rgba(30, 20, 50, 0.55) !important; /* Premium Violet Glass */
+    backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(168, 85, 247, 0.3) !important; /* Soft Purple Border */
+    border-top: 4px solid #a855f7 !important; /* Bright Violet Top Line */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+}
+.service-card h3, .academy-card h3, .tool-card h3, .hardware-card h3, .checklist-card h3, .affiliate-card h3, .contact-info h3 {
+    color: #c084fc !important; /* Bright Neon Purple Headings */
+}
+.service-card, .academy-card, .tool-card, .hardware-card, .checklist-card, .affiliate-card, .contact-info, .contact-form-wrapper {
+    background: rgba(255, 255, 255, 0.85) !important; /* Soft Light Glass */
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-top: 4px solid #0070f3 !important; /* Royal Blue Top Line */
+    color: #1e293b !important; /* Dark Grey Text for easy reading */
+}
+.service-card h3, .academy-card h3, .tool-card h3, .hardware-card h3, .checklist-card h3, .affiliate-card h3, .contact-info h3, .contact-info p, .service-card p {
+    color: #0f172a !important; /* Dark Heading text */
+}
+.service-card, .academy-card, .tool-card, .hardware-card, .checklist-card, .affiliate-card, .contact-info, .contact-form-wrapper {
+    background: rgba(224, 242, 254, 0.25) !important; /* Halka paani jaisa transparent blue tint */
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(14, 165, 233, 0.25) !important; /* Paani ki jhalak jaisa border */
+    border-top: 4px solid #0ea5e9 !important; /* Ocean Blue top line */
+    box-shadow: 0 8px 32px 0 rgba(0, 112, 243, 0.1) !important;
+    color: #ffffff !important; /* Padhne ke liye white text */
+}
+.service-card h3, .academy-card h3, .tool-card h3, .hardware-card h3, .checklist-card h3, .affiliate-card h3, .contact-info h3 {
+    color: #38bdf8 !important; /* Bright water-blue headings */
+}
+.service-card p, .academy-card p, .tool-card p, .hardware-card p, .checklist-card p, .affiliate-card p, .contact-info p {
+    color: #e0f2fe !important; /* Clear light blue-white text */
+}
+.service-card, .academy-card, .tool-card, .hardware-card, .checklist-card, .affiliate-card, .contact-info, .contact-form-wrapper {
+    background: rgba(253, 251, 247, 0.9) !important; /* Soft Luxury Champagne White */
+    backdrop-filter: blur(10px) !important;
+    border: 1px solid rgba(212, 163, 115, 0.4) !important;
+    border-top: 4px solid #b5835a) !important; /* Premium Matte Gold top line */
+    border-radius: 14px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25) !important;
+}
+.service-card h3, .academy-card h3, .tool-card h3, .hardware-card h3, .checklist-card h3, .affiliate-card h3, .contact-info h3 {
+    color: #1a120b !important; /* Rich Dark Charcoal Headings */
+    font-weight: 700 !important;
+}
+.service-card p, .academy-card p, .tool-card p, .hardware-card p, .checklist-card p, .affiliate-card p, .contact-info p {
+    color: #4a3f35 !important; /* Clean readable dark text */
+}
+/* Purane links ko clean aur well-spaced banayein */
+nav a {
+    color: #e2e8f0 !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    padding: 8px 14px !important;
+    margin: 0 4px !important;
+    transition: all 0.3s ease !important;
+    border-radius: 6px !important;
+}
+
+/* Normal links par hover effect */
+nav a:hover:not(#nav-academy) {
+    color: #38bdf8 !important;
+    background: rgba(56, 189, 248, 0.1) !important;
+}
+
+/* Apex IT Academy ko sab se alag aur premium button banayein */
+#nav-academy {
+    background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%) !important;
+    color: #ffffff !important;
+    padding: 8px 18px !important;
+    font-weight: 700 !important;
+    border-radius: 20px !important;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3) !important;
+}
+
+#nav-academy:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5) !important;
+}
+nav a {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+    color: #ffffff !important;
+    padding: 8px 16px !important;
+    margin: 0 5px !important;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%) !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(56, 189, 248, 0.4) !important;
+    border-color: transparent !important;
+}
+header, .header, nav {
+    background: rgba(11, 17, 30, 0.75) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+nav a {
+    background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%) !important;
+    color: #ffffff !important;
+    padding: 8px 16px !important;
+    margin: 0 5px !important;
+    font-weight: 700 !important;
+    font-size: 0.9rem !important;
+    border-radius: 20px !important;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3) !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+}
+
+nav a:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5) !important;
+}
+.hero, .hero-content, .hero-text {
+    text-align: left !important;
+    padding-left: 20px !important; /* halka sa gap taake screen se bilkul na chipke */
+    margin-left: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+.hero .cta-buttons, .hero-buttons, .hero-content div {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 15px !important;
+    flex-wrap: nowrap !important;
+}
+.hero a, .hero button, .cta-btn {
+    display: inline-block !important;
+    float: left !important;
+    margin-right: 15px !important;
+    margin-bottom: 0 !important;
+}
+/* Parent layout ko clear karne ke liye */
+.hero-content::after {
+    content: "" !important;
+    display: table !important;
+    clear: both !important;
+}
+.hero-content {
+    display: block !important; /* flex column hata kar block layout lagane ke liye */
+}
+.hero-content .cta-btn {
+    display: inline-block !important;
+    vertical-align: top !important;
+    margin-right: 15px !important;
+    margin-top: 15px !important;
+}
+/* Dono white boxes ko sleek premium dark metallic look dene ke liye */
+.contact-info, .contact-form-wrapper {
+    background: #152238 !important;
+    border: 1px solid rgba(56, 189, 248, 0.2) !important;
+    color: #ffffff !important;
+}
+
+/* Left container ke text colors ko bilkul white aur readable banane ke liye */
+.contact-info h3, .contact-info p, .contact-info div, .contact-info span {
+    color: #ffffff !important;
+}
+
+/* Form ki headings/labels ko pyara cyan look dene ke liye */
+.contact-form-wrapper label, .contact-form-wrapper .form-label {
+    color: #38bdf8 !important;
+    font-weight: 600 !important;
+}
+
+/* Required Solution dropdown aur inputs ka solid background set karne ke liye */
+.contact-form-wrapper input, .contact-form-wrapper textarea, .contact-form-wrapper select {
+    background-color: #0b111e !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
