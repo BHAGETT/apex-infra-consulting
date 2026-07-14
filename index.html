@@ -3,198 +3,502 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faiz Ahmed Bhagett | IT Infrastructure Consultant</title>
-    <link rel="manifest" href="/site.webmanifest">
+    <title>Apex Infra Consulting | Faiz Ahmed Bhagett</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Navigation -->
-    <header>
-        <div class="logo-container">
-            <div class="logo-symbol"></div>
-            <div class="logo-text">APEX INFRA <span>CONSULTING</span></div>
-        </div>
-               <nav>
+<!-- NAVBAR -->
+<header id="navbar">
+    <div class="nav-inner">
+        <a href="#home" class="logo">
+            <div class="logo-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                </svg>
+            </div>
+            APEX INFRA <span>CONSULTING</span>
+        </a>
+        <nav class="desktop-nav">
             <a href="#home" id="nav-home">Home</a>
             <a href="#services" id="nav-services">Services</a>
-			<a href="#products" id="nav-products">Digital Products</a>
             <a href="#about" id="nav-about">About</a>
-			  <a href="#academy" id="nav-academy" style="color: #ffffff; font-weight: bold;">Apex IT Academy</a>
-            <a href="#contact" id="nav-contact">Contact</a>
-			<a href="#resources" id="nav-resources">Resources</a>
-            <a id="install-btn" style="display: none; background-color: #0070f3; color: white; border-radius: 4px; padding: 4px 8px; font-weight: bold; cursor: pointer;">Install App</a>
-            <a href="javascript:void(0);" onclick="setLanguage('en');">EN</a>
-            <a href="javascript:void(0);" onclick="setLanguage('de');">DE</a>
+            <a href="#devops" id="nav-devops">DevOps</a>
+            <a href="#academy" id="nav-academy">Academy</a>
+            <a href="#products" id="nav-products">Products</a>
+            <a href="#resources" id="nav-resources">Resources</a>
         </nav>
-    </header>
-
-  </div>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-                  
+        <div class="nav-right">
+            <button class="lang-btn" onclick="setLanguage('de')">DE</button>
+            <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+            <a href="#contact" class="btn-primary" id="nav-cta">Get in Touch</a>
+            <button class="hamburger" id="hamburger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-        <div class="hero-content">
-            <h1 id="hero-h1">Secure & Modern IT Infrastructure Services</h1>
-            <p id="hero-p">22+ Years of Enterprise IT Experience managing global cloud migrations across 45 countries for KONE GmbH via Remedyforce, Deutsche Bank, and Johnson & Johnson.</p>
-            <a href="#contact" class="cta-btn" id="hero-btn">Book Free Consultation</a>
-            <a href="https://calendly.com/bhagett2021/15" target="_blank" rel="noopener noreferrer" class="cta-btn" id="assessment-btn" styffff; margin-left: 10px;">Book a Free 15-Minute IT Assessment Call</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="section">
-        <h2 id="services-title">Expertise & Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3 id="srv1-h">Cloud Transitions & M365</h3>
-                <p id="srv1-p">Strategic migration paths tailored for complex Microsoft 365 tenants and hybrid setups. Implement robust Azure AD (Entra ID) integrations to guarantee secure, single-sign-on (SSO) environments across your enterprise. Build automated user lifecycle frameworks to minimize administrative overhead while maximizing cloud ROI and data compliance.</p>
-            </div>
-            <div class="service-card">
-                <h3 id="srv2-h">Endpoint Management</h3>
-                <p id="srv2-p">Streamline device provisioning using advanced modern frameworks like Microsoft Autopilot and automated imaging. We engineer and enforce zero-trust compliance, configuration, and app protection policies across your entire fleet. Seamlessly manage, patch, and monitor corporate endpoints using tailored Microsoft Intune and SCCM/MECM hybrid technologies.</p>
-            </div>
-            <div class="service-card">
-                <h3 id="srv3-h">Infrastructure Hardening</h3>
-                <p id="srv3-p">Thoroughly evaluate and fortify your entire digital footprint against modern, sophisticated cyber threats. Implement strict Multi-Factor Authentication (MFA) policies, Conditional Access rules, and full-disk BitLocker mechanisms. Design resilient, encrypted virtual desktop infrastructures (VDI) and secure remote access gateways like ZScaler.</p>
-            </div>
-            <div class="service-card">
-                <h3 id="srv4-h">Enterprise Networking</h3>
-                <p id="srv4-p">Design and deploy highly secure, modern Multi-VLAN switches and robust RADIUS system infrastructures. Implement strict AAA frameworks to ensure only authorized users and compliant devices gain entry. Leverage proven, enterprise-grade hardware and software frameworks utilizing Cisco and Aruba technology ecosystems.</p>
-            </div>
-            <div class="service-card">
-                <h3 id="srv5-h">IT-Support Onsite and Remote</h3>
-                <p id="srv5-p">Fast-response 1st, 2nd, and 3rd level corporate helpdesk architectures optimized for immediate issue resolution. We provide reliable on-site troubleshooting for local office operations alongside highly scalable remote administration suites, ensuring maximum operational uptime and continuous data protection baseline audits.</p>
-            </div>
-            <div class="service-card">
-                <h3 id="srv6-h">Citrix Administration VDI and VM-Ware</h3>
-                <p id="srv6-p">Advanced virtualization architecture design utilizing Citrix Virtual DaaS and VMware Horizon systems. We specialize in engineering secure, centralized digital workspaces that segment access and prevent data exfiltration, combined with elite datacenter virtualization performance optimization for hypervisors.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Digital Products Section -->
-    <section id="products" class="section">
-        <h2 id="products-title">Digital Templates & IT Checklists</h2>
-        <div class="services-grid">
-
-            <div class="service-card">
-                <h3>Enterprise Zero-Trust Deployment Checklist</h3>
-                <p>Professional checklist for planning and validating Zero-Trust security deployments in enterprise environments.</p>
-                <a class="cta-btn" href="https://bhagett.gumroad.com/l/rbzjx" target="_blank" rel="noopener noreferrer">Buy Now</a>
-            </div>
-
-            <div class="service-card">
-                <h3>Microsoft Intune Configuration Templates</h3>
-                <p>Ready-to-use endpoint management templates for Microsoft Intune policies, compliance and configuration.</p>
-                <a class="cta-btn" href="https://bhagett.gumroad.com/l/ztggm" target="_blank" rel="noopener noreferrer">Buy Now</a>
-            </div>
-
-            <div class="service-card">
-                <h3>ISO 27001 Security Audit Spreadsheet</h3>
-                <p>Security audit workbook to help companies organize compliance checks and documentation.</p>
-                <a class="cta-btn" href="https://bhagett.gumroad.com/l/nqlejb" target="_blank" rel="noopener noreferrer">Buy Now</a>
-            </div>
-
-        </div>
-    </section>
-    <!-- IT Academy Section -->
-    <section id="academy" class="section" style="background-color: transparent; padding: 60px 20px;">
-       <marquee behavior="alternate" scrollamount="4">
-    <div style="display: inline-block; background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(8px); padding: 3px 30px; border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3); box-shadow: 0 0 20px rgba(56, 189, 248, 0.2); text-align: center; max-width: 800px; margin: 10px;">
-        <h2 id="academy-title" style="color: #ffffff; margin-bottom: 5px; font-weight: 800; letter-spacing: 0.5px; text-decoration: none; border-bottom: none;">💻 Apex IT Academy</h2>
-        <p style="color: #cbd5e1; font-size: 1.05rem; margin: 0; font-weight: 500;">
-            Learn IT From an Enterprise Expert. Hands-On Labs, Real Equipment in Oestrich-Winkel.
-        </p>
     </div>
-</marquee>
-        <div class="services-grid">
-            <div class="academy-card">
-                <h3>🛠️ IT Support Specialist</h3>
-                <p>Master WDS/MDT OS deployment, Active Directory user management, group policies, enterprise hardware troubleshooting, and live incident ticketing tracking in ServiceNow.</p>
-				<button class="academy-btn" onclick="document.getElementById('solution').value='academy'; window.location.href='#contact';">Register for Onsite Lab</button>
-            </div>
-            <div class="academy-card">
-                <h3>🌐 Network Technician</h3>
-                <p>Get hands-on with real Cisco & Aruba switches. Learn physical rack patching, multi-VLAN segmentation, trunking configuration, DHCP/DNS infrastructure, and AAA RADIUS authentication.</p>
-			<button class="academy-btn" onclick="document.getElementById('solution').value='academy'; window.location.href='#contact';">Register for Onsite Lab</button>
-            </div>
-            <div class="academy-card">
-                <h3>🖥️ System Administrator</h3>
-				<p>Advance your career with cloud engineering. Manage Microsoft 365 tenants, enterprise Azure AD setups, automated modern endpoint deployment via Intune/SCCM, and VMware virtualization.</p>
-                <button class="academy-btn" onclick="document.getElementById('solution').value='academy-sysadmin'; window.location.href='#contact';">Register for Onsite Lab</button>
-                </div>
-    </section>
-<section id="resources" style="padding: 60px 20px; text-align: center;">
-            <h2 style="font-size: 36px; color: #ffffff; margin-bottom: 40px; font-weight: 800; letter-spacing: 1px; position: relative; display: inline-block;">
-        🛠️ Recommended Tools & Hardware
-        <span style="position: absolute; bottom: -10px; left: 25%; width: 50%; height: 3px; background: linear-gradient(90deg, transparent, #38bdf8, transparent); box-shadow: 0 0 10px #38bdf8;"></span>
-    </h2>
-    <div class="affiliate-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-top: 20px;">
-    <div class="affiliate-container">
-       <div class="affiliate-card">
-    <h3>NordVPN - Secure Business VPN</h3>
-    <p>Protect your enterprise network and data with elite, zero-trust remote encryption.</p>
-    <a href="https://nordvpn.com" target="_blank" class="academy-btn" style="text-align:center; display:block; text-decoration:none;">Get Secured</a></div>
-	<div class="affiliate-card"><h3>AWS Business - Cloud Solutions</h3><p>Scale globally with secure cloud computing, storage, and managed infrastructure.</p><a href="https://aws.amazon.com" target="_blank" class="academy-btn" style="text-align:center; display:block; text-decoration:none;">Explore AWS</a></div>
-<div class="affiliate-card"><h3>DigitalOcean - Cloud Hosting</h3><p>Reliable, scalable cloud infrastructure designed for enterprise deployment frameworks.</p><a href="https://digitalocean.com" target="_blank" class="academy-btn" style="text-align:center; display:block; text-decoration:none;">Deploy Cloud</a></div>
-</div>
-</section><div style="margin-top: -60px;"></div>
-    <!-- About Section -->
-    <section id="about" class="section" style="background-color: transparent;">
-        <h2 id="about-title" style="color: #ffffff;">About Me</h2>
-        <div class="about-text">
-            <p style="color: #ffffff;" id="about-p">I am <strong>Faiz Ahmed Bhagett</strong>, a Senior IT Infrastructure Consultant with a global track record across Germany, Sweden, Belgium, and the USA. Having managed massive global client migrations across 45 countries via Remedyforce for KONE GmbH, and engineered systems for high-stakes environments like Deutsche Bank and Johnson & Johnson, I build enterprise architectures focused strictly on elite stability, zero-trust layouts, and maximum uptime durability.</p>
-        </div>
-    </section>
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#home" onclick="closeMobileNav()">Home</a>
+        <a href="#services" onclick="closeMobileNav()">Services</a>
+        <a href="#about" onclick="closeMobileNav()">About</a>
+        <a href="#devops" onclick="closeMobileNav()">DevOps</a>
+        <a href="#academy" onclick="closeMobileNav()">Academy</a>
+        <a href="#products" onclick="closeMobileNav()">Products</a>
+        <a href="#resources" onclick="closeMobileNav()">Resources</a>
+        <a href="#contact" onclick="closeMobileNav()">Contact</a>
+    </div>
+</header>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <h2 id="contact-title">Connect With Me</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3 id="info-title">Contact Information</h3>
-                <p><strong>Faiz Ahmed Bhagett IT Consulting</strong></p>
-                <p>Kirchstraße 42,<br>65376 Oestrich-Winkel,<br>Deutschland</p>
-                <p><strong>Phone:</strong> 0171 6780015 / +49 171 6780015</p>
-                <p><strong>Email:</strong> Bhagett@yahoo.de</p>
-         </div>
-            <div class="contact-form-wrapper">
-                <form action="https://formspree.io/f/xdavepnq" method="POST">"
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-inner">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span id="hero-badge">22+ Years Enterprise IT Experience</span>
+            </div>
+            <h1 id="hero-h1">Enterprise IT<br>Infrastructure.<br><em>Secured.</em></h1>
+            <p id="hero-p">Global cloud migrations across 45 countries. Zero-trust architectures for Deutsche Bank, KONE GmbH, and Johnson &amp; Johnson.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary large" id="hero-btn">Book Free Consultation</a>
+                <a href="https://calendly.com/bhagett2021/15" target="_blank" rel="noopener noreferrer" class="btn-outline" id="assessment-btn">15-Min Assessment →</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hstat"><span class="hstat-n">22+</span><span class="hstat-l">Years Exp.</span></div>
+                <div class="hstat-sep"></div>
+                <div class="hstat"><span class="hstat-n">45</span><span class="hstat-l">Countries</span></div>
+                <div class="hstat-sep"></div>
+                <div class="hstat"><span class="hstat-n">3</span><span class="hstat-l">Fortune Clients</span></div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="hero-visual">
+                <div class="vis-orb"></div>
+                <div class="vis-ring"></div>
+                <div class="vis-ring r2"></div>
+                <div class="float-chip chip1">
+                    <span class="chip-dot green"></span>
+                    <div><strong>Zero-Trust Active</strong><small>MFA + Conditional Access</small></div>
+                </div>
+                <div class="float-chip chip2">
+                    <span class="chip-dot blue"></span>
+                    <div><strong>Cloud Migration</strong><small>Azure AD · M365 · Intune</small></div>
+                </div>
+                <div class="float-chip chip3">
+                    <span class="chip-dot cyan"></span>
+                    <div><strong>Network Secured</strong><small>Cisco · Aruba · RADIUS</small></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trusted-bar">
+        <span class="trusted-lbl">Trusted by</span>
+        <div class="trusted-logos">
+            <span>KONE GmbH</span>
+            <span>Deutsche Bank</span>
+            <span>Johnson &amp; Johnson</span>
+            <span>Remedyforce</span>
+            <span>Microsoft</span>
+            <span>Cisco</span>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+    <div class="wrap">
+        <div class="sec-label">What We Do</div>
+        <h2 id="services-title">Expertise &amp; Services</h2>
+        <p class="sec-sub">End-to-end IT infrastructure solutions built for enterprise scale and zero-trust security.</p>
+        <div class="services-grid">
+            <div class="svc-card">
+                <div class="svc-icon-wrap"><img src="aws.jpeg" alt="Cloud &amp; M365"></div>
+                <h3 id="srv1-h">Cloud Transitions &amp; M365</h3>
+                <p id="srv1-p">Strategic migration paths for Microsoft 365 tenants, Azure AD integrations, SSO environments, and automated user lifecycle frameworks.</p>
+            </div>
+            <div class="svc-card">
+                <div class="svc-icon-wrap"><img src="endpoint management).jpeg" alt="Endpoint Management"></div>
+                <h3 id="srv2-h">Endpoint Management</h3>
+                <p id="srv2-p">Device provisioning via Microsoft Autopilot, zero-trust compliance policies, and full fleet management with Intune and SCCM/MECM.</p>
+            </div>
+            <div class="svc-card">
+                <div class="svc-icon-wrap"><img src="infrastruture hardening.jpeg" alt="Infrastructure Hardening"></div>
+                <h3 id="srv3-h">Infrastructure Hardening</h3>
+                <p id="srv3-p">MFA policies, Conditional Access, BitLocker encryption, resilient VDI architectures, and ZScaler secure remote access gateways.</p>
+            </div>
+            <div class="svc-card">
+                <div class="svc-icon-wrap"><img src="network tech.jpeg" alt="Enterprise Networking"></div>
+                <h3 id="srv4-h">Enterprise Networking</h3>
+                <p id="srv4-p">Secure Multi-VLAN switching, RADIUS infrastructure, AAA frameworks, and enterprise-grade Cisco and Aruba ecosystems.</p>
+            </div>
+            <div class="svc-card">
+                <div class="svc-icon-wrap"><img src="IT support.jpeg" alt="IT Support"></div>
+                <h3 id="srv5-h">IT Support — Onsite &amp; Remote</h3>
+                <p id="srv5-p">1st, 2nd, and 3rd level helpdesk, on-site troubleshooting, scalable remote administration, and continuous uptime monitoring.</p>
+            </div>
+            <div class="svc-card">
+                <div class="svc-icon-wrap"><img src="citrix vmwar.jpeg" alt="Citrix VDI &amp; VMware"></div>
+                <h3 id="srv6-h">Citrix VDI &amp; VMware</h3>
+                <p id="srv6-p">Citrix Virtual DaaS and VMware Horizon architectures for secure, centralized workspaces with datacenter hypervisor optimization.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="tech-section">
+    <div class="wrap">
+        <div class="sec-label">Technology Stack</div>
+        <h2>Tools &amp; Platforms We Master</h2>
+        <div class="tech-grid">
+            <div class="tech-pill">Microsoft Azure</div>
+            <div class="tech-pill">Microsoft 365</div>
+            <div class="tech-pill">Intune / MECM</div>
+            <div class="tech-pill">Azure AD / Entra ID</div>
+            <div class="tech-pill">Cisco</div>
+            <div class="tech-pill">Aruba</div>
+            <div class="tech-pill">VMware Horizon</div>
+            <div class="tech-pill">Citrix DaaS</div>
+            <div class="tech-pill">ZScaler</div>
+            <div class="tech-pill">ServiceNow</div>
+            <div class="tech-pill">Autopilot</div>
+            <div class="tech-pill">BitLocker</div>
+            <div class="tech-pill">RADIUS / AAA</div>
+            <div class="tech-pill">Remedyforce</div>
+            <div class="tech-pill">WDS / MDT</div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about-section">
+    <div class="wrap">
+        <div class="about-grid">
+            <div class="about-left">
+                <div class="sec-label">About</div>
+                <h2 id="about-title">Senior IT Infrastructure Consultant</h2>
+                <p id="about-p">I am <strong>Faiz Ahmed Bhagett</strong> — Senior IT Infrastructure Consultant with a global track record across Germany, Sweden, Belgium, and the USA. Managing migrations across 45 countries for KONE GmbH, and engineering systems for Deutsche Bank and Johnson &amp; Johnson. I build enterprise architectures focused on zero-trust, elite stability, and maximum uptime.</p>
+                <ul class="about-list">
+                    <li>Global Deployments in 45+ Countries</li>
+                    <li>Enterprise Clients: KONE, Deutsche Bank, J&amp;J</li>
+                    <li>Based in Oestrich-Winkel, Deutschland</li>
+                    <li>Available for On-site &amp; Remote Engagements</li>
+                </ul>
+                <a href="#contact" class="btn-primary">Work With Me</a>
+            </div>
+            <div class="about-right">
+                <div class="stats-grid">
+                    <div class="stat-card"><span class="sc-num">22+</span><span class="sc-lbl">Years in Enterprise IT</span></div>
+                    <div class="stat-card"><span class="sc-num">45</span><span class="sc-lbl">Countries Managed</span></div>
+                    <div class="stat-card"><span class="sc-num">3</span><span class="sc-lbl">Fortune 500 Clients</span></div>
+                    <div class="stat-card"><span class="sc-num">100%</span><span class="sc-lbl">Zero-Trust Focus</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DEVOPS EXPERTISE -->
+<section id="devops" class="section devops-section">
+    <div class="wrap">
+        <div class="sec-label">Meet the DevOps Engineer</div>
+        <h2>Muhammad Rafay</h2>
+        <p class="sec-sub">DevOps Engineer focused on scalable infrastructure, cloud automation, and bridging the gap between dev and ops — cleanly and fast.</p>
+
+        <div class="rafay-intro-grid">
+            <div class="rafay-bio-card">
+                <div class="devops-tag">About Rafay</div>
+                <h3>Building Infrastructure That Scales</h3>
+                <p>Muhammad Rafay is a DevOps Engineer with hands-on production experience across CI/CD automation, cloud security, and container orchestration. The focus is always on building systems teams can rely on — not just configuring tools.</p>
+                <p>From automated deployment pipelines with GitHub Actions to hardening AWS environments with WAF, IAM, and Secrets Manager, the work is about making infrastructure invisible so engineering teams can ship faster and safer.</p>
+            </div>
+
+            <div class="devops-right-stack">
+                <div class="devops-card">
+                    <div class="devops-tag">Certifications</div>
+                    <h3>Credentials</h3>
+                    <ul class="devops-list">
+                        <li>RHEL Certified</li>
+                        <li>Certified Kubernetes Application Developer (CKAD)</li>
+                        <li>AWS Cloud &amp; DevSecOps Practices</li>
+                        <li>Cloud Security &amp; Compliance</li>
+                    </ul>
+                </div>
+                <div class="devops-card">
+                    <div class="devops-tag">Experience</div>
+                    <h3>Delivered in Production</h3>
+                    <ul class="devops-list">
+                        <li>CI/CD pipelines for Flask + React via GitHub Actions</li>
+                        <li>Docker automation &amp; Docker Hub deployments</li>
+                        <li>AWS IAM, Secrets Manager, WAF &amp; Shield setup</li>
+                        <li>Real-time monitoring with CloudWatch &amp; Security Hub</li>
+                        <li>Continuous compliance via AWS Config</li>
+                        <li>Observability stack with Prometheus &amp; Grafana</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="devops-tools-row">
+            <div class="devops-tag" style="margin-bottom: 20px;">Tech Stack</div>
+            <div class="devops-skills">
+                <span>Kubernetes</span>
+                <span>Docker</span>
+                <span>Ansible</span>
+                <span>Terraform / IaC</span>
+                <span>Microsoft Azure</span>
+                <span>AWS</span>
+                <span>Python</span>
+                <span>Bash Scripting</span>
+                <span>GitHub Actions</span>
+                <span>CI/CD Pipelines</span>
+                <span>Prometheus</span>
+                <span>Grafana</span>
+                <span>Linux</span>
+                <span>Chef</span>
+                <span>MLOps</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ACADEMY -->
+<section id="academy" class="section">
+    <div class="wrap">
+        <div class="sec-label">Education</div>
+        <h2 id="academy-title">Apex IT Academy</h2>
+        <p class="sec-sub" id="academy-sub">Hands-on IT labs with real enterprise equipment in Oestrich-Winkel. Learn from 22 years of field experience.</p>
+        <div class="academy-grid">
+            <div class="ac-card">
+                <div class="ac-tag">Course 01</div>
+                <div class="ac-emoji"><img src="IT support.jpeg" alt="IT Support Specialist"></div>
+                <h3>IT Support Specialist</h3>
+                <p>WDS/MDT OS deployment, Active Directory, group policies, enterprise hardware troubleshooting, and ServiceNow incident tracking.</p>
+                <button class="btn-primary" onclick="document.getElementById('solution').value='academy'; window.location.href='#contact';">Register Now</button>
+            </div>
+            <div class="ac-card ac-featured">
+                <div class="ac-tag popular">Most Popular</div>
+                <div class="ac-emoji"><img src="network tech.jpeg" alt="Network Technician"></div>
+                <h3>Network Technician</h3>
+                <p>Real Cisco &amp; Aruba switches, rack patching, multi-VLAN segmentation, DHCP/DNS, and AAA RADIUS authentication.</p>
+                <button class="btn-primary" onclick="document.getElementById('solution').value='academy'; window.location.href='#contact';">Register Now</button>
+            </div>
+            <div class="ac-card">
+                <div class="ac-tag">Course 03</div>
+                <div class="ac-emoji"><img src="sysadmin.png" alt="System Administrator"></div>
+                <h3>System Administrator</h3>
+                <p>Microsoft 365 tenants, Azure AD, automated endpoint deployment via Intune/SCCM, and VMware virtualization labs.</p>
+                <button class="btn-primary" onclick="document.getElementById('solution').value='academy-sysadmin'; window.location.href='#contact';">Register Now</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section products-section">
+    <div class="wrap">
+        <div class="sec-label">Digital Products</div>
+        <h2 id="products-title">Templates &amp; IT Checklists</h2>
+        <p class="sec-sub">Battle-tested enterprise templates. Download and deploy immediately.</p>
+        <div class="products-grid">
+            <div class="prod-card">
+                <div class="prod-emoji"><img src="zerotrust.png" alt="Zero-Trust"></div>
+                <div class="prod-tag">Security</div>
+                <h3 id="p1-title">Enterprise Zero-Trust Deployment Checklist</h3>
+                <p id="p1-desc">Professional checklist for planning and validating Zero-Trust security deployments in enterprise environments.</p>
+                <a class="btn-primary" id="p1-btn" href="https://bhagett.gumroad.com/l/rbzjx" target="_blank" rel="noopener noreferrer">Buy Now →</a>
+            </div>
+            <div class="prod-card">
+                <div class="prod-emoji"><img src="Microsoft Intune Configuration Templates.jpeg" alt="Intune Templates"></div>
+                <div class="prod-tag">Endpoint</div>
+                <h3 id="p2-title">Microsoft Intune Configuration Templates</h3>
+                <p id="p2-desc">Ready-to-use endpoint management templates for Intune policies, compliance and configuration.</p>
+                <a class="btn-primary" id="p2-btn" href="https://bhagett.gumroad.com/l/ztggm" target="_blank" rel="noopener noreferrer">Buy Now →</a>
+            </div>
+            <div class="prod-card">
+                <div class="prod-emoji"><img src="iso-27001-spreadsheet.png" alt="ISO 27001"></div>
+                <div class="prod-tag">Compliance</div>
+                <h3 id="p3-title">ISO 27001 Security Audit Spreadsheet</h3>
+                <p id="p3-desc">Security audit workbook to help companies organize compliance checks and documentation.</p>
+                <a class="btn-primary" id="p3-btn" href="https://bhagett.gumroad.com/l/nqlejb" target="_blank" rel="noopener noreferrer">Buy Now →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources" class="section">
+    <div class="wrap">
+        <div class="sec-label">Resources</div>
+        <h2>Recommended Tools &amp; Partners</h2>
+        <p class="sec-sub">Vetted enterprise tools we use and trust.</p>
+        <div class="resources-grid">
+            <div class="res-card">
+                <div class="res-emoji"><img src="nordvpn.png" alt="NordVPN"></div>
+                <h3>NordVPN Business</h3>
+                <p>Enterprise-grade VPN with zero-trust remote encryption for distributed teams.</p>
+                <a href="https://nordvpn.com" target="_blank" rel="noopener noreferrer" class="btn-outline-sm">Get Secured →</a>
+            </div>
+            <div class="res-card">
+                <div class="res-emoji"><img src="aws.jpeg" alt="AWS"></div>
+                <h3>AWS Business</h3>
+                <p>Scalable cloud computing, managed storage and infrastructure for global enterprise.</p>
+                <a href="https://aws.amazon.com" target="_blank" rel="noopener noreferrer" class="btn-outline-sm">Explore AWS →</a>
+            </div>
+            <div class="res-card">
+                <div class="res-emoji"><img src="digitalocean.jpeg" alt="DigitalOcean"></div>
+                <h3>DigitalOcean</h3>
+                <p>Reliable, scalable cloud infrastructure built for fast enterprise deployment.</p>
+                <a href="https://digitalocean.com" target="_blank" rel="noopener noreferrer" class="btn-outline-sm">Deploy Cloud →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-section">
+    <div class="wrap">
+        <div class="contact-grid">
+            <div class="contact-left">
+                <div class="sec-label">Contact</div>
+                <h2 id="contact-title">Let's Build Something Secure.</h2>
+                <p>Ready to modernize your IT infrastructure? Get a free consultation and assessment.</p>
+                <div class="contact-info-list">
+                    <div class="ci-row"><span class="ci-icon">&#128205;</span><span>Kirchstraße 42, 65376 Oestrich-Winkel, Deutschland</span></div>
+                    <div class="ci-row"><span class="ci-icon">&#128222;</span><span>+49 171 6780015</span></div>
+                    <div class="ci-row"><span class="ci-icon">&#9993;</span><span>Bhagett@yahoo.de</span></div>
+                </div>
+                <a href="https://wa.me/491716780015" target="_blank" rel="noopener noreferrer" class="wa-btn">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-3.559c1.66.985 3.513 1.504 5.405 1.505 5.554 0 10.075-4.519 10.078-10.074.002-2.693-1.047-5.224-2.951-7.127C17.225 2.841 14.7 1.793 12.003 1.793c-5.556 0-10.077 4.52-10.08 10.074-.001 1.884.492 3.725 1.431 5.36l-.993 3.63 3.712-.973zm13.04-7.391c-.329-.165-1.943-.959-2.242-1.068-.3-.11-.518-.165-.736.165-.219.329-.846 1.068-1.037 1.288-.19.22-.382.247-.711.082-1.129-.566-1.904-1.001-2.652-2.285-.197-.339.197-.315.562-1.042.061-.123.031-.23-.015-.329-.047-.099-.423-1.019-.579-1.396-.152-.365-.307-.315-.423-.321-.109-.005-.234-.006-.36-.006-.126 0-.331.047-.504.236-.173.188-.66.645-.66 1.573 0 .928.675 1.825.77 1.951.095.126 1.329 2.03 3.22 2.845.449.194.8.311 1.074.398.452.144.862.124 1.187.075.363-.055 1.14-.466 1.3-.916.16-.45.16-.836.113-.916-.047-.08-.173-.123-.502-.288z"/></svg>
+                    Chat on WhatsApp
+                </a>
+            </div>
+            <div class="contact-right">
+                <form action="https://formspree.io/f/xdavepnq" method="POST" class="contact-form">
+                    <input type="hidden" name="_cc" value="muhammadrafay588@gmail.com">
                     <label for="name" id="lbl-name">Your Name / Company</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name / Company" required>
-                    
+                    <input type="text" id="name" name="name" placeholder="Your name or company" required>
                     <label for="email" id="lbl-email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                    
+                    <input type="email" id="email" name="email" placeholder="hello@company.com" required>
                     <label for="solution" id="lbl-solution">Required Solution</label>
                     <select id="solution" name="solution" required>
-                        <option value="" id="opt-general">Select a Solution</option>
-                        <option value="cloud" id="opt-cloud">Cloud Migration & M365</option>
-                        <option value="security" id="opt-security">IT Security Hardening</option>
-                        <option value="network" id="opt-network">Network Optimization</option>
+                        <option value="">Select a Solution</option>
+                        <option value="cloud">Cloud Migration &amp; M365</option>
+                        <option value="security">IT Security Hardening</option>
+                        <option value="network">Network Optimization</option>
                         <option value="support">IT Support</option>
-                        <option value="academy" id="opt-academy">IT Academy Onsite Lab Training</option>
+                        <option value="academy">IT Academy Lab Training</option>
                     </select>
-                    
                     <label for="message" id="lbl-msg">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                    
-                    <button type="submit" id="btn-submit" class="cta-btn" style="margin-top: 15px; background-color: #0070f3; color: white; border: none; padding: 10px 20px; cursor: pointer; border-radius: 4px;">Submit</button>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                    <button type="submit" id="btn-submit" class="btn-primary btn-full">Send Message →</button>
                 </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- FIXED NATIVE WEB REDIRECTION SYSTEM (BYPASSES DOT COM HOME PAGES) -->
-    <a href="https://wa.me/491716780015" target="_blank" rel="noopener noreferrer" target="_blank" rel="noopener noreferrer" class="whatsapp-float" style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none;" title="Chat via WhatsApp">
-        <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor">
-            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-3.559c1.66.985 3.513 1.504 5.405 1.505 5.554 0 10.075-4.519 10.078-10.074.002-2.693-1.047-5.224-2.951-7.127C17.225 2.841 14.7 1.793 12.003 1.793c-5.556 0-10.077 4.52-10.08 10.074-.001 1.884.492 3.725 1.431 5.36l-.993 3.63 3.712-.973zm13.04-7.391c-.329-.165-1.943-.959-2.242-1.068-.3-.11-.518-.165-.736.165-.219.329-.846 1.068-1.037 1.288-.19.22-.382.247-.711.082-1.129-.566-1.904-1.001-2.652-2.285-.197-.339.197-.315.562-1.042.061-.123.031-.23-.015-.329-.047-.099-.423-1.019-.579-1.396-.152-.365-.307-.315-.423-.321-.109-.005-.234-.006-.36-.006-.126 0-.331.047-.504.236-.173.188-.66.645-.66 1.573 0 .928.675 1.825.77 1.951.095.126 1.329 2.03 3.22 2.845.449.194.8.311 1.074.398.452.144.862.124 1.187.075.363-.055 1.14-.466 1.3-.916.16-.45.16-.836.113-.916-.047-.08-.173-.123-.502-.288z"/>
-        </svg>
-    </a>
+<!-- RAFAY CONTACT -->
+<section id="contact-rafay" class="section rafay-contact-section">
+    <div class="wrap">
+        <div class="rafay-contact-grid">
+            <div class="contact-left">
+                <div class="sec-label">DevOps Contact</div>
+                <h2>Work With Rafay.</h2>
+                <p>Need a scalable pipeline, a hardened cloud setup, or want to bring DevOps expertise into your team? Get in touch.</p>
+                <div class="contact-info-list">
+                    <div class="ci-row"><span class="ci-icon">&#127760;</span><span>Available Remotely</span></div>
+                    <div class="ci-row"><span class="ci-icon">&#128205;</span><span>Islamabad, Pakistan</span></div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="https://formspree.io/f/xdavepnq" method="POST" class="contact-form">
+                    <input type="hidden" name="_cc" value="muhammadrafay588@gmail.com">
+                    <label for="rafay-name">Your Name / Company</label>
+                    <input type="text" id="rafay-name" name="name" placeholder="Your name or company" required>
+                    <label for="rafay-email">Email Address</label>
+                    <input type="email" id="rafay-email" name="email" placeholder="hello@company.com" required>
+                    <label for="rafay-service">What do you need?</label>
+                    <select id="rafay-service" name="service" required>
+                        <option value="">Select a Service</option>
+                        <option value="cicd">CI/CD Pipeline Setup</option>
+                        <option value="kubernetes">Kubernetes / Container Orchestration</option>
+                        <option value="cloud">AWS / Azure Cloud Infrastructure</option>
+                        <option value="iac">Infrastructure as Code (Terraform / Ansible)</option>
+                        <option value="monitoring">Monitoring &amp; Observability</option>
+                        <option value="security">DevSecOps &amp; Cloud Security</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="rafay-message">Message</label>
+                    <textarea id="rafay-message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                    <button type="submit" class="btn-primary btn-full">Send Message →</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <script src="script.js"></script>
-	</body>
+<!-- FOOTER -->
+<footer>
+    <div class="wrap">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <div class="logo-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    APEX INFRA <span>CONSULTING</span>
+                </a>
+                <p>Enterprise IT Infrastructure Consulting. Zero-trust security, cloud migrations, and endpoint management for global enterprises.</p>
+            </div>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="#services">Cloud &amp; M365</a>
+                    <a href="#services">Endpoint Management</a>
+                    <a href="#services">Infrastructure Hardening</a>
+                    <a href="#services">Enterprise Networking</a>
+                    <a href="#services">Citrix VDI &amp; VMware</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#about">About</a>
+                    <a href="#academy">IT Academy</a>
+                    <a href="#products">Digital Products</a>
+                    <a href="#resources">Resources</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <a href="tel:+491716780015">+49 171 6780015</a>
+                    <a href="mailto:Bhagett@yahoo.de">Bhagett@yahoo.de</a>
+                    <a href="https://wa.me/491716780015" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a href="https://calendly.com/bhagett2021/15" target="_blank" rel="noopener noreferrer">Book a Call</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Faiz Ahmed Bhagett IT Consulting · Kirchstraße 42, 65376 Oestrich-Winkel, Deutschland</p>
+            <div class="footer-lang">
+                <button onclick="setLanguage('en')">EN</button>
+                <button onclick="setLanguage('de')">DE</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/491716780015" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.455L0 24zm6.59-3.559c1.66.985 3.513 1.504 5.405 1.505 5.554 0 10.075-4.519 10.078-10.074.002-2.693-1.047-5.224-2.951-7.127C17.225 2.841 14.7 1.793 12.003 1.793c-5.556 0-10.077 4.52-10.08 10.074-.001 1.884.492 3.725 1.431 5.36l-.993 3.63 3.712-.973zm13.04-7.391c-.329-.165-1.943-.959-2.242-1.068-.3-.11-.518-.165-.736.165-.219.329-.846 1.068-1.037 1.288-.19.22-.382.247-.711.082-1.129-.566-1.904-1.001-2.652-2.285-.197-.339.197-.315.562-1.042.061-.123.031-.23-.015-.329-.047-.099-.423-1.019-.579-1.396-.152-.365-.307-.315-.423-.321-.109-.005-.234-.006-.36-.006-.126 0-.331.047-.504.236-.173.188-.66.645-.66 1.573 0 .928.675 1.825.77 1.951.095.126 1.329 2.03 3.22 2.845.449.194.8.311 1.074.398.452.144.862.124 1.187.075.363-.055 1.14-.466 1.3-.916.16-.45.16-.836.113-.916-.047-.08-.173-.123-.502-.288z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
 </html>
